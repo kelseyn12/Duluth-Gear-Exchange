@@ -1,10 +1,12 @@
 import React from 'react'
+import Layout from '../components/Layout'
 
 const repairs = () => {
   return (
-    <div>
-        repairs
-    </div>
+    <Layout>
+
+      <h1>Repairs!</h1>  
+    </Layout>
   )
 }
 
