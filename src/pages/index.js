@@ -1,5 +1,6 @@
 import React from "react"
 import Header from "../components/homePage/Header"
+import Instagram from "../components/homePage/Instagram"
 import Section from "../components/homePage/Section"
 import Layout from "../components/Layout"
 
@@ -9,6 +10,7 @@ export default function Home() {
     
    <Header />
    <Section />
+   <Instagram />
   </Layout>
   )
 }
