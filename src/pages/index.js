@@ -1,13 +1,14 @@
 import React from "react"
-import Header from "../components/Header"
+import Header from "../components/homePage/Header"
+import Section from "../components/homePage/Section"
 import Layout from "../components/Layout"
 
 export default function Home() {
   return (
   <Layout>
     
-   <h1>Main Page </h1>
    <Header />
+   <Section />
   </Layout>
   )
 }
