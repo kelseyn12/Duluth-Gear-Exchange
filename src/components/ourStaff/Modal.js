@@ -3,7 +3,8 @@ import React from 'react'
 const Modal = () => {
   return (
     <>
-    <h3>Use Material UI modals </h3>
+    child of staffcard
+    pass down full bio as prop and print out prop
     </>
   )
 }
