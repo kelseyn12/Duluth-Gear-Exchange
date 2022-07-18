@@ -37,9 +37,11 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-image",
+    `gatsby-plugin-instagram-embed`,
     {
       resolve: "gatsby-source-contentful",
       options: contentfulConfig,
     },
+    
   ],
 };
