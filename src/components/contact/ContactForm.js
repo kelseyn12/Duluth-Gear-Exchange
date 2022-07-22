@@ -1,10 +1,10 @@
 import React from 'react'
-import { Form, Button } from "react-bootstrap"
+import { Form, Button, Container, Row, Col } from "react-bootstrap"
 
 const ContactForm = () => {
   return (
    <>
-   
+   <Container>
    <Form 
    name="contact" 
    method="post" 
@@ -32,6 +32,7 @@ const ContactForm = () => {
     </Form.Group>
     <Button type="submit">Send</Button>
    </Form>
+   </Container>
    </>
   )
 }
