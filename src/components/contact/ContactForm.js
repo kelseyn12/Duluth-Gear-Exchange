@@ -1,7 +1,7 @@
 import React from 'react'
 import { Form } from "react-bootstrap"
 
-const Form = () => {
+const ContactForm = () => {
   return (
    <>
    <Form 
@@ -34,4 +34,4 @@ const Form = () => {
   )
 }
 
-export default Form
+export default ContactForm
