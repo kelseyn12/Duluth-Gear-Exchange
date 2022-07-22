@@ -1,9 +1,10 @@
 import React from 'react'
-import { Form } from "react-bootstrap"
+import { Form, Button } from "react-bootstrap"
 
 const ContactForm = () => {
   return (
    <>
+   
    <Form 
    name="contact" 
    method="post" 
@@ -29,6 +30,7 @@ const ContactForm = () => {
       rows="3"
       placeholder="I love Duluth Gear Exchange!" />
     </Form.Group>
+    <Button type="submit">Send</Button>
    </Form>
    </>
   )
