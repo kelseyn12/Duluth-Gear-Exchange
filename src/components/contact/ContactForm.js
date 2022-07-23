@@ -1,6 +1,7 @@
 import React from "react"
 import { Form, Button, Container, Row, Col } from "react-bootstrap"
 
+
 const ContactForm = () => {
   return (
     <>
@@ -12,18 +13,25 @@ const ContactForm = () => {
               method="post"
               data-netlify="true"
               data-netlify-honeypot="bot-field"
+              onSubmit="submit"
             >
+              <input type="hidden" name="form-name" value="contact" />
+              <p hidden>
+                <label>
+                  Don't fill this out: <input name="bot-field" />
+                </label>
+              </p>
               <Row>
                 <Col md={6}>
                   <Form.Group controlId="formBasicFirstName">
                     <Form.Label>First Name</Form.Label>
-                    <Form.Control required type="text" placeholder="Jane" />
+                    <Form.Control required type="text" placeholder="Jane" name="first-name" />
                   </Form.Group>
                 </Col>
                 <Col md={6}>
                   <Form.Group controlId="formBasicLastName">
                     <Form.Label>Last Name</Form.Label>
-                    <Form.Control required type="text" placeholder="Doe" />
+                    <Form.Control required type="text" placeholder="Doe" name="last-name" />
                   </Form.Group>
                 </Col>
               </Row>
@@ -33,6 +41,7 @@ const ContactForm = () => {
                   required
                   type="email"
                   placeholder="name@name.com"
+                  name="email"
                 />
               </Form.Group>
               <Form.Group controlId="formBasicTextBox">
@@ -42,6 +51,7 @@ const ContactForm = () => {
                   as="textarea"
                   rows="3"
                   placeholder="I love Duluth Gear Exchange!"
+                  name="info"
                 />
               </Form.Group>
               <Button type="submit">Send</Button>
