@@ -1,6 +1,6 @@
 import React from "react"
 import { Form, Button, Container, Row, Col } from "react-bootstrap"
-
+import Map from "./Map"
 
 const ContactForm = () => {
   return (
@@ -58,7 +58,8 @@ const ContactForm = () => {
             </Form>
           </Col>
           <Col lr={6}>
-            Have questions? Shoot us a message and we will get back to you!
+            {/* Have questions? Shoot us a message and we will get back to you! */}
+            <Map />
           </Col>
         </Row>
       </Container>
