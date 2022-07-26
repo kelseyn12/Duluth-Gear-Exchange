@@ -26,8 +26,10 @@ const Section = () => {
 
       <h3>Cost Estimates</h3>
       {data.allContentfulCostEstimates.edges.map( ({ node, index }) => (
-        <p>{ node.repair }
-        { node.cost }</p>
+        <div className="repairCost">
+        <p>{ node.repair }</p>
+        <p>{ node.cost }</p>
+        </div>
       ))}
       <h5>Turn-Around Time: 2-3 weeks unless communicated otherwise</h5>
       <h6>
