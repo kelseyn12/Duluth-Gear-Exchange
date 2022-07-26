@@ -1,10 +1,32 @@
 import React from 'react'
+import { useStaticQuery, graphql } from "gatsby"
 
 const FrequentQuestions = () => {
+
+  const data = useStaticQuery(graphql`
+  query {
+    allContentfulQuestionAnswer {
+      edges {
+        node {
+          question
+          answer {
+            answer
+          }
+        }
+      }
+    }
+  }
+`)
+
   return (
     <>
     <h1>FREQUENTLY ASKED QUESTIONS</h1>
-   <h4>Contentful question and response content model</h4>
+    {data.allContentfulQuestionAnswer.edges.map( ({ node, index }) => (
+        <div className="repairCost">
+        <p>{ node.question }</p>
+        <p>{ node.answer.answer }</p>
+        </div>
+      ))}
 
     
     </>
