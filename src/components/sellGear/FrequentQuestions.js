@@ -1,6 +1,7 @@
 import React from 'react'
 import { useStaticQuery, graphql } from "gatsby"
 
+
 const FrequentQuestions = () => {
 
   const data = useStaticQuery(graphql`
@@ -9,8 +10,13 @@ const FrequentQuestions = () => {
       edges {
         node {
           question
+          id
           answer {
             answer
+            childrenMarkdownRemark {
+              html
+              id
+            }
           }
         }
       }

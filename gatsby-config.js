@@ -36,8 +36,12 @@ module.exports = {
     description: "Duluth Gear Exchange Website"
   },
   plugins: [
-    "gatsby-plugin-image",
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-image`,
     `gatsby-plugin-instagram-embed`,
+    `gatsby-transformer-remark`,
+
     {
       resolve: "gatsby-source-contentful",
       options: contentfulConfig,
