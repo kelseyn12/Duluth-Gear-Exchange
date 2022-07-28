@@ -1,6 +1,6 @@
 import React from 'react'
 import { useStaticQuery, graphql } from "gatsby"
-
+import Accordion from 'react-bootstrap/Accordion';
 
 const FrequentQuestions = () => {
 
@@ -29,8 +29,14 @@ const FrequentQuestions = () => {
     <h1>FREQUENTLY ASKED QUESTIONS</h1>
     {data.allContentfulQuestionAnswer.edges.map( ({ node, index }) => (
         <div className="repairCost">
-        <p>{ node.question }</p>
-        <p>{ node.answer.answer }</p>
+          <Accordion>
+      <Accordion.Item eventKey="0">
+        <Accordion.Header>{ node.question }</Accordion.Header>
+        <Accordion.Body>
+        { node.answer.answer }
+        </Accordion.Body>
+      </Accordion.Item>
+    </Accordion>
         </div>
       ))}
 

@@ -1,5 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import Accordion from 'react-bootstrap/Accordion';
 
 const Section = () => {
   const data = useStaticQuery(graphql`
@@ -27,8 +28,14 @@ const Section = () => {
       <h3>Cost Estimates</h3>
       {data.allContentfulCostEstimates.edges.map( ({ node, index }) => (
         <div className="repairCost">
-        <p>{ node.repair }</p>
-        <p>{ node.cost }</p>
+          <Accordion>
+      <Accordion.Item eventKey="0">
+        <Accordion.Header>{ node.repair }</Accordion.Header>
+        <Accordion.Body>
+        { node.cost }
+        </Accordion.Body>
+      </Accordion.Item>
+    </Accordion>
         </div>
       ))}
       <h5>Turn-Around Time: 2-3 weeks unless communicated otherwise</h5>
