@@ -26,8 +26,9 @@ const Section = () => {
       </h3>
 
       <h3>Cost Estimates</h3>
-      {data.allContentfulCostEstimates.edges.map( ({ node, index }) => (
-        <div className="repairCost">
+      {data.allContentfulCostEstimates.edges.map( ( {node, index} ) => {
+        return (
+        <div key={index} className="repairCost">
           <Accordion>
       <Accordion.Item eventKey="0">
         <Accordion.Header>{ node.repair }</Accordion.Header>
@@ -37,7 +38,8 @@ const Section = () => {
       </Accordion.Item>
     </Accordion>
         </div>
-      ))}
+      )
+})}
       <h5>Turn-Around Time: 2-3 weeks unless communicated otherwise</h5>
       <h6>
         Questions? <br />

@@ -9,9 +9,7 @@ const FrequentQuestions = () => {
         edges {
           node {
             question
-            id
             answer {
-              answer
               childrenMarkdownRemark {
                 html
                 id
@@ -26,8 +24,11 @@ const FrequentQuestions = () => {
   return (
     <>
       <h1>FREQUENTLY ASKED QUESTIONS</h1>
-      {data.allContentfulQuestionAnswer.edges.map(({ node, index }) => (
-        <div className="repairCost">
+      {data.allContentfulQuestionAnswer.edges.map(( {node, index} ) => {
+        console.log(node.answer.childrenMarkdownRemark)
+      
+        return(
+        <div key={node.question} className="repairCost">
           <Accordion>
             <Accordion.Item eventKey="0">
               <Accordion.Header>
@@ -39,11 +40,22 @@ const FrequentQuestions = () => {
                     __html: node.answer.childrenMarkdownRemark.html
                   }}
                 />
+                
               </Accordion.Body>
             </Accordion.Item>
           </Accordion>
         </div>
-      ))}
+        //another way I could use an "accordion"
+        // <details>
+        //   <summary>{node.question}</summary>
+        //   <p
+        //           dangerouslySetInnerHTML={{
+        //             __html: node.answer.childrenMarkdownRemark.html
+        //           }}
+        //         />
+        // </details>
+        )
+})}
     </>
   )
 }
