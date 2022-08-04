@@ -1,32 +1,43 @@
 import React from 'react'
 import { useStaticQuery, graphql } from "gatsby"
+import { GatsbyImage } from 'gatsby-plugin-image'
 
 const Carasol = () => {
   const data = useStaticQuery(graphql`
   query
   {
-    allContentfulCarousel {
-      edges {
-        node {
-          Images {
-            children {
-              ... on ImageSharp {
-                id
-                gatsbyImageData(width: 200)
-              }
-            }
-          }
-        }
+    contentfulCarousel(title: {eq: "repairs"}) {
+      Images {
+        id
+        gatsbyImageData
+        description
       }
     }
   }
   `)
 
+  console.log(data.contentfulCarousel)
   return (
+    
     <>
-    <h2>Put carasolimage content model with images of Nils repairs here</h2>
+    <h2>Add a Carousel to put the images in!</h2>
+    
+    {data.contentfulCarousel.Images.map( (node, index) => {
+      console.log(node)
+      return (
+      <div key={index}>
+      <GatsbyImage
+     image={ node.gatsbyImageData } 
+     alt={ node.description}
+      />
+       
+      </div>
+      )
+      })}
+   
     </>
   )
 }
+
 
 export default Carasol
