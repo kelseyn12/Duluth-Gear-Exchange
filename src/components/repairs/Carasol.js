@@ -15,8 +15,6 @@ const Carasol = () => {
     }
   }
   `)
-
-  console.log(data.contentfulCarousel)
   return (
     
     <>
