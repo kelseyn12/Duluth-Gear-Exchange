@@ -1,6 +1,7 @@
 import React from 'react'
 import { useStaticQuery, graphql } from "gatsby"
 import { GatsbyImage } from 'gatsby-plugin-image'
+import Carousel from 'react-bootstrap/Carousel';
 
 const Header = () => {
   const data = useStaticQuery(graphql`
@@ -19,19 +20,22 @@ const Header = () => {
     <>
     <h1>Buy Gear. Sell Gear.</h1>
     <h2>Insert Automatic Carousel for banner images</h2>
-
+    <Carousel>
     {data.contentfulCarousel.Images.map( (node, index) => {
-      console.log(node)
       return (
-      <div key={index}>
-      <GatsbyImage
-     image={ node.gatsbyImageData } 
-     alt={ node.description}
-      />
        
-      </div>
+        <Carousel.Item>
+      <GatsbyImage
+      key={index}
+      className="d-block w-100"
+      image={ node.gatsbyImageData } 
+      alt={ node.description}
+      />
+      </Carousel.Item>
+      
       )
       })}
+      </Carousel> 
     </>
   )
 }
