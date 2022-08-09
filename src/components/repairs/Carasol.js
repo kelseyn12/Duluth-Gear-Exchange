@@ -1,6 +1,7 @@
 import React from 'react'
 import { useStaticQuery, graphql } from "gatsby"
 import { GatsbyImage } from 'gatsby-plugin-image'
+import Carousel from 'react-bootstrap/Carousel';
 
 const Carasol = () => {
   const data = useStaticQuery(graphql`
@@ -19,20 +20,20 @@ const Carasol = () => {
     
     <>
     <h2>Add a Carousel to put the images in!</h2>
-    
+    <Carousel>
     {data.contentfulCarousel.Images.map( (node, index) => {
-      console.log(node)
       return (
-      <div key={index}>
+        <Carousel.Item>
       <GatsbyImage
+      key={index}
+      className="d-block w-100"
      image={ node.gatsbyImageData } 
      alt={ node.description}
       />
-       
-      </div>
+       </Carousel.Item>
       )
       })}
-   
+   </Carousel>
     </>
   )
 }
