@@ -20,7 +20,7 @@ const Header = () => {
     <>
     <h1>Buy Gear. Sell Gear.</h1>
     <h2>Insert Automatic Carousel for banner images</h2>
-    <Carousel controls={false} indicators={false}>
+    <Carousel controls={false} indicators={false} pause={false}>
     {data.contentfulCarousel.Images.map( (node, index) => {
       return (
        
