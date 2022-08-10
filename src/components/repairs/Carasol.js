@@ -20,7 +20,7 @@ const Carasol = () => {
     
     <>
     <h2>Add a Carousel to put the images in!</h2>
-    <Carousel>
+    <Carousel indicators={false}>
     {data.contentfulCarousel.Images.map( (node, index) => {
       return (
         <Carousel.Item>
