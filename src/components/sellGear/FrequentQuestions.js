@@ -10,7 +10,7 @@ const FrequentQuestions = () => {
           node {
             question
             answer {
-              childrenMarkdownRemark {
+              childMarkdownRemark {
                 html
                 id
               }
@@ -25,7 +25,7 @@ const FrequentQuestions = () => {
     <>
       <h1>FREQUENTLY ASKED QUESTIONS</h1>
       {data.allContentfulQuestionAnswer.edges.map(( {node, index} ) => {
-        console.log(node.answer.childrenMarkdownRemark)
+        console.log(node.answer.childMarkdownRemark)
       
         return(
         <div key={node.question} className="repairCost">
@@ -37,7 +37,7 @@ const FrequentQuestions = () => {
               <Accordion.Body>
                 <p
                   dangerouslySetInnerHTML={{
-                    __html: node.answer.childrenMarkdownRemark.html
+                    __html: node.answer.childMarkdownRemark.html
                   }}
                 />
                 
