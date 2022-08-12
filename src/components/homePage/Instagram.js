@@ -15,13 +15,16 @@ const PostDisplay = ({ item }) => {
   }
   return (
     <div
-      style={{ width: "200px", height: "200px" }}
       onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
+      onMouseLeave={handleMouseLeave} role='none'
     >
       <GatsbyImage
         image={item.node.localImage.childImageSharp.gatsbyImageData}
+        key={item.node.id}
+        alt={item.node.caption || "Instagram Post"}
+        fluid={item.node.fluid}
       />
+     
 
       {isHover && <p> {item.node.caption}</p>}
     </div>
@@ -36,7 +39,10 @@ const Instagram = () => {
           node {
             localImage {
               childImageSharp {
-                gatsbyImageData(width: 200, height: 200)
+                gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
+                fluid(maxWidth: 200 ) {
+                  ...GatsbyImageSharpFluid
+                }
               }
             }
             caption
@@ -49,10 +55,18 @@ const Instagram = () => {
   return (
     <>
       <div
-        style={{ maxWidth: `900px`, marginBottom: `15.45rem`, display: "flex" }}
+      style={{
+        display: 'grid',
+        gridTemplateColumns: 'repeat(3, 1fr)',
+        gridTemplateRows: 'repeat(2, 1fr)',
+        gridColumnGap: '2px',
+        gridRowGap: '2px',
+        maxWidth: '700px',
+        }}
+        
       >
         {arrayOfInstaImages.map((item, i) => {
-          return <PostDisplay item={item} key={i} />
+          return <PostDisplay item={item} key={i}  />
         })}
       </div>
     </>
