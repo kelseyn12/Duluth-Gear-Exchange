@@ -1,9 +1,40 @@
-/* .carousel-control-next-icon {
-display: none;
+
+.picContainer {
+    position: relative;
+    width: 100%;
 }
-.carousel-control-prev-icon {
-    display: none;
+.image {
+    display: block;
+    width: 100%;
+
 }
-.carousel-indicators {
-    display: none;
-} */
+
+.imgtext {
+  position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100% ;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 300ms ease-in-out;
+    padding: 50px;
+}
+ 
+
+   .picContainer:hover img {
+    transition: all 300ms ease-in-out;
+    filter: blur(5px);
+    transform: scale(1.03);
+  } 
+
+  .picContainer:hover .imgtext {
+    opacity: 1;
+    background: rgba(0,0,0,0.5);
+  } 
+
+

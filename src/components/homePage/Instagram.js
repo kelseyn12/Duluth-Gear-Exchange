@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import _get from "lodash/get"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { useState } from "react"
+import { Container } from "react-bootstrap"
 
 const PostDisplay = ({ item }) => {
   const [isHover, setIsHover] = useState(false)
@@ -14,20 +15,26 @@ const PostDisplay = ({ item }) => {
     setIsHover(false)
   }
   return (
-    <div
+    <Container fluid
+     className="picContainer"
       onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave} role='none'
+      onMouseLeave={handleMouseLeave}
+      role="none"
     >
-      <GatsbyImage
-        image={item.node.localImage.childImageSharp.gatsbyImageData}
-        key={item.node.id}
-        alt={item.node.caption || "Instagram Post"}
-        fluid={item.node.fluid}
-      />
-     
-
-      {isHover && <p> {item.node.caption}</p>}
-    </div>
+      <figure className="position-relative">
+        <GatsbyImage
+          image={item.node.localImage.childImageSharp.gatsbyImageData}
+          key={item.node.id}
+          alt={item.node.caption || "Instagram Post"}
+          fluid={item.node.fluid}
+          className="image"
+          
+        />
+        <figcaption className="imgtext">
+          {isHover && <p> {item.node.caption}</p>}
+        </figcaption>
+      </figure>
+    </Container>
   )
 }
 
@@ -40,7 +47,7 @@ const Instagram = () => {
             localImage {
               childImageSharp {
                 gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
-                fluid(maxWidth: 200 ) {
+                fluid(maxWidth: 200) {
                   ...GatsbyImageSharpFluid
                 }
               }
@@ -54,19 +61,18 @@ const Instagram = () => {
   let arrayOfInstaImages = _get(data, "allInstagramContent.edges")
   return (
     <>
-      <div
-      style={{
-        display: 'grid',
-        gridTemplateColumns: 'repeat(3, 1fr)',
-        gridTemplateRows: 'repeat(2, 1fr)',
-        gridColumnGap: '2px',
-        gridRowGap: '2px',
-        maxWidth: '700px',
+      <div 
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(3, calc( ((80vw - 4rem)/3)) )",
+          gridTemplateRows: 'auto',
+          margin: '1rem 0',
+          padding: '0 1rem',
+          justifyContent: 'center',
         }}
-        
       >
         {arrayOfInstaImages.map((item, i) => {
-          return <PostDisplay item={item} key={i}  />
+          return <PostDisplay item={item} key={i} />
         })}
       </div>
     </>
