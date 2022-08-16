@@ -18,8 +18,7 @@ const Header = () => {
   `)
   return (
     <>
-    <h1>Buy Gear. Sell Gear.</h1>
-    <h2>Insert Automatic Carousel for banner images</h2>
+    <h1 className='callToAction'>Buy Gear. Sell Gear.</h1>
     <Carousel controls={false} indicators={false} pause={false}>
     {data.contentfulCarousel.Images.map( (node, index) => {
       return (
@@ -27,7 +26,7 @@ const Header = () => {
         <Carousel.Item>
       <GatsbyImage
       key={index}
-      className="d-block w-100"
+      className="d-block w-100 bannerImage"
       image={ node.gatsbyImageData } 
       alt={ node.description}
       />

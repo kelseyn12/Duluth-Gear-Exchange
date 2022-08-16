@@ -1,27 +1,24 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import React from "react"
+import { Link } from "gatsby"
 const Navbar = () => {
   return (
+    <>
     <nav>
-        <h4>Logo here?</h4>
-        <ul>
-            <li>
-                <Link to='/'>Home</Link>
-            </li>
-            <li>
-                <Link to='/sellYourGear'>Sell Your Gear</Link>
-            </li>
-            <li>
-                <Link to='/repairs'>Repairs</Link>
-            </li>
-            <li>
-                <Link to='/ourStaff'>Our Staff</Link>
-            </li>
-            <li>
-                <Link to='/contact'>Contact</Link>
-            </li>
-        </ul>
+      <img src={'../../Logo.png'} className='logo' alt='Duluth Gear Exchange logo'/>
+
+      <Link style={{textDecoration: 'none', color: '#042F4A'}} to="/">Home</Link>
+
+      <Link style={{textDecoration: 'none', color: '#042F4A'}} to="/sellYourGear">Sell Your Gear</Link>
+
+      <Link style={{textDecoration: 'none', color: '#042F4A'}} to="/repairs">Repairs</Link>
+
+      <Link style={{textDecoration: 'none', color: '#042F4A'}} to="/ourStaff">Our Staff</Link>
+
+      <Link style={{textDecoration: 'none', color: '#042F4A'}} to="/contact">Contact</Link>
+      
     </nav>
+    <hr className="homepageLine" />
+    </>
   )
 }
 

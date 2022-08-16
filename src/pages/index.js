@@ -4,6 +4,7 @@ import Instagram from "../components/homePage/Instagram"
 import Section from "../components/homePage/Section"
 import Layout from "../components/Layout"
 import '../styles/homePage.css'
+import '../styles/global.css'
 
 export default function Home() {
   return (
