@@ -61,16 +61,7 @@ const Instagram = () => {
   let arrayOfInstaImages = _get(data, "allInstagramContent.edges")
   return (
     <>
-      <div 
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(3, calc( ((80vw - 4rem)/3)) )",
-          gridTemplateRows: 'auto',
-          margin: '1rem 0',
-          padding: '0 1rem',
-          justifyContent: 'center',
-        }}
-      >
+      <div className="image-grid-container">
         {arrayOfInstaImages.map((item, i) => {
           return <PostDisplay item={item} key={i} />
         })}
