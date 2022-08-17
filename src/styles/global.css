@@ -1,9 +1,14 @@
-nav {
+.nav {
     align-items: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-right: 60px;
     
+}
+
+.navbar-toggler {
+   margin: 40px;
+   
 }
 .logo {
     height: 120px ;
@@ -12,24 +17,61 @@ nav {
 
 footer {
     background-color: #042F4A;
-    padding: 100px;
+    padding: 20px;
     color: #5EC8E5;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .footerHours{
     text-align: center;
 }
 
+.footerLinks{
+    margin: 10px;
+}
 .navBarLinkTop{
-   margin: 20px; 
-   padding: 10px;
+   margin: 5px; 
+   padding: 2px;
     
 }
 
 .navBarLinkBottom{
-    margin: 20px; 
-    padding: 10px;
+    margin: 5px; 
+    padding: 2px;
      
- }
+ } 
+
+ @media only screen and (max-width: 600px) {
+    .logo {
+        height: 90px ;
+    width: 110px;
+    }
+    hr {
+        display: none;
+    }
+    .nav {
+        display: flex;
+        align-items: center;
+        padding-right: 0px;
+    }
+
+    .footerMap {
+        display: none;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+   .footerInfo {
+    display: flex;
+    text-align: center;
+    margin-top: 10px;
+   }
+   .footerLinks{
+    display: none;
+}
+    }
+
 

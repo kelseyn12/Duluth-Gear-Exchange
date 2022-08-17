@@ -1,25 +1,44 @@
 import React from "react"
-import { Link } from "gatsby"
-const Navbar = () => {
+import { Nav, Navbar, Container } from 'react-bootstrap';
+
+
+const Navigation = () => {
   return (
     <>
-    <nav>
+    
+    <Navbar collapseOnSelect expand="lg">
+      <Navbar.Brand href='/'>
       <img src={'../../Logo.png'} className='logo' alt='Duluth Gear Exchange logo'/>
-
-      <Link style={{textDecoration: 'none', color: '#042F4A'}} to="/">Home</Link>
-
-      <Link style={{textDecoration: 'none', color: '#042F4A'}} to="/sellYourGear">Sell Your Gear</Link>
-
-      <Link style={{textDecoration: 'none', color: '#042F4A'}} to="/repairs">Repairs</Link>
-
-      <Link style={{textDecoration: 'none', color: '#042F4A'}} to="/ourStaff">Our Staff</Link>
-
-      <Link style={{textDecoration: 'none', color: '#042F4A'}} to="/contact">Contact</Link>
+      </Navbar.Brand>
+      <Navbar.Toggle aria-controls="navbarScroll" data-bs-target="#navbarScroll" />
+    <Navbar.Collapse id="navbarScroll">
+      <Container>
+    <Nav className="nav" >
+    
+      <Nav.Item>
+      <Nav.Link style={{textDecoration: 'none', color: '#042F4A'}} to="/">Home</Nav.Link>
+      </Nav.Item>
+      <Nav.Item>
+      <Nav.Link style={{textDecoration: 'none', color: '#042F4A'}} to="/sellYourGear">Sell Your Gear</Nav.Link>
+      </Nav.Item>
+      <Nav.Item>
+      <Nav.Link style={{textDecoration: 'none', color: '#042F4A'}} to="/repairs">Repairs</Nav.Link>
+      </Nav.Item>
+      <Nav.Item>
+      <Nav.Link style={{textDecoration: 'none', color: '#042F4A'}} to="/ourStaff">Our Staff</Nav.Link>
+      </Nav.Item>
+      <Nav.Item>
+      <Nav.Link style={{textDecoration: 'none', color: '#042F4A'}} to="/contact">Contact</Nav.Link>
+      </Nav.Item>
       
-    </nav>
+    </Nav>
+    </Container>
+    </Navbar.Collapse>
+    </Navbar>
+    
     <hr className="homepageLine" />
     </>
   )
 }
 
-export default Navbar
+export default Navigation;
