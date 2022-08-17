@@ -115,6 +115,20 @@
       max-height: 1000px;
       overflow: scroll;
     }
+    .nowAcceptingText {
+      font-size:smaller;
+      margin: 0;
+    }
+    .storeInfo {
+      font-size: smaller;
+      line-height: 15px;
+  margin: 20px;
+     
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+
   }
 
 
