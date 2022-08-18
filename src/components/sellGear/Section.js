@@ -34,10 +34,12 @@ const Section = () => {
         <GatsbyImage
      image={ node.lookingFor.gatsbyImageData } 
      alt={ node.description}
+     key={index}
       />
       <GatsbyImage
      image={ node.notAccepting.gatsbyImageData } 
      alt={ node.description}
+     key={index}
       />
         </div>
         )})

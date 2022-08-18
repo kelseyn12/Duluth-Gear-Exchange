@@ -16,19 +16,19 @@ const Navigation = () => {
     <Nav className="nav" >
     
       <Nav.Item>
-      <Nav.Link style={{textDecoration: 'none', color: '#042F4A'}} to="/">Home</Nav.Link>
+      <Nav.Link style={{textDecoration: 'none', color: '#042F4A'}} href="/">Home</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-      <Nav.Link style={{textDecoration: 'none', color: '#042F4A'}} to="/sellYourGear">Sell Your Gear</Nav.Link>
+      <Nav.Link style={{textDecoration: 'none', color: '#042F4A'}} href="/sellYourGear">Sell Your Gear</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-      <Nav.Link style={{textDecoration: 'none', color: '#042F4A'}} to="/repairs">Repairs</Nav.Link>
+      <Nav.Link style={{textDecoration: 'none', color: '#042F4A'}} href="/repairs">Repairs</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-      <Nav.Link style={{textDecoration: 'none', color: '#042F4A'}} to="/ourStaff">Our Staff</Nav.Link>
+      <Nav.Link style={{textDecoration: 'none', color: '#042F4A'}} href="/ourStaff">Our Staff</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-      <Nav.Link style={{textDecoration: 'none', color: '#042F4A'}} to="/contact">Contact</Nav.Link>
+      <Nav.Link style={{textDecoration: 'none', color: '#042F4A'}} href="/contact">Contact</Nav.Link>
       </Nav.Item>
       
     </Nav>
