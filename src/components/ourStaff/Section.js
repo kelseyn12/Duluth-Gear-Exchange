@@ -2,6 +2,8 @@
 import React from 'react'
 import { useStaticQuery, graphql } from "gatsby"
 import { GatsbyImage } from 'gatsby-plugin-image'
+import StaffCard from './StaffCard'
+
 
 const Section = () => {
   
@@ -12,6 +14,7 @@ const Section = () => {
     allContentfulStaff {
       edges {
         node {
+          title
           staffBio {
             staffBio
           }
@@ -34,6 +37,7 @@ const Section = () => {
     {data.allContentfulStaff.edges.map (( item, i ) => {
       
       return (
+        
         <div key={i} >
 
         <GatsbyImage
@@ -42,6 +46,8 @@ const Section = () => {
         alt={ 'staff image' } />
 
       { item.node.staffOneLine }
+
+      <StaffCard bio={ item.node.staffBio.staffBio } name={ item.node.title }  />
   
     </div>
       )
