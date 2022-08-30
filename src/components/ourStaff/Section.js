@@ -2,7 +2,7 @@
 import React from 'react'
 import { useStaticQuery, graphql } from "gatsby"
 import { GatsbyImage } from 'gatsby-plugin-image'
-import StaffCard from './StaffCard'
+import Modal from './Modal'
 
 
 const Section = () => {
@@ -47,7 +47,7 @@ const Section = () => {
 
       { item.node.staffOneLine }
 
-      <StaffCard bio={ item.node.staffBio.staffBio } name={ item.node.title }  />
+      <Modal bio={ item.node.staffBio.staffBio } name={ item.node.title }  />
   
     </div>
       )
