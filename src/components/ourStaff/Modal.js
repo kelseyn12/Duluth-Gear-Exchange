@@ -1,9 +1,11 @@
+// import { GatsbyImage } from 'gatsby-plugin-image'
 import React, {useState} from 'react'
+
 
 import Button from "react-bootstrap/Button"
 import Modal from "react-bootstrap/Modal"
 
-const StaffCard = ({bio, name}) => {
+const StaffCard = ({bio, name, image}) => {
   const [show, setShow] = useState(false)
 
   const handleClose = () => setShow(false)
@@ -19,7 +21,9 @@ const StaffCard = ({bio, name}) => {
         <Modal.Header closeButton>
           <Modal.Title>{name}</Modal.Title>
         </Modal.Header>
-        <Modal.Body> {bio}</Modal.Body>
+        {/* <GatsbyImage {image} /> */}
+        <Modal.Body> {bio}
+        </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Close
