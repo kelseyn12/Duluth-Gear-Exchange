@@ -1,4 +1,5 @@
-// import { GatsbyImage } from 'gatsby-plugin-image'
+
+import { GatsbyImage } from 'gatsby-plugin-image'
 import React, {useState} from 'react'
 
 
@@ -15,14 +16,16 @@ const StaffCard = ({bio, name, image}) => {
   return (
     <>
     <Button variant="link" onClick={handleShow}>
-      and...
+      Arrow
       </Button>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>{name}</Modal.Title>
         </Modal.Header>
-        {/* <GatsbyImage {image} /> */}
-        <Modal.Body> {bio}
+        
+        <Modal.Body> 
+          {bio} 
+         <GatsbyImage image={image} />
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>

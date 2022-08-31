@@ -47,7 +47,7 @@ const Section = () => {
 
       { item.node.staffOneLine }
 
-      <Modal bio={ item.node.staffBio.staffBio } name={ item.node.title }  />
+      <Modal bio={ item.node.staffBio.staffBio } name={ item.node.title } image={ item.node.staffImages[0].gatsbyImageData } />
   
     </div>
       )
