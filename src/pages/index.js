@@ -5,6 +5,7 @@ import Section from "../components/homePage/Section"
 import Layout from "../components/Layout"
 import '../styles/homePage.css'
 import '../styles/global.css'
+import Newsletter from "../components/homePage/Newsletter"
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
    <Header />
    <Section />
    <Instagram />
+   <Newsletter />
   </Layout>
   )
 }

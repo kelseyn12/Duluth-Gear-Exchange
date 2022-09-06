@@ -12,7 +12,7 @@ Sat - Sun: 10am - 5pm
 <div className='footerInfo'>
 PHONE: 218-481-7270<br />
 EMAIL: greatlakesgearexchange@gmail.com <br />
-INSTAGRAM: @greatlakesgearexchange
+INSTAGRAM: <a href='https://www.instagram.com/greatlakesgearexchange/'>@greatlakesgearexchange</a>
 </div>
 <div className='footerLinks'>
 <Link className='navBarLinkTop' style={{textDecoration: 'none', color: '#5EC8E5'}} to='/ourStaff'>Our Staff</Link>

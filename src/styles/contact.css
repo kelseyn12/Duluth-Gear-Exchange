@@ -2,3 +2,17 @@ textarea {
     max-height: 200px;
     max-width: 600px;
 }
+
+
+button.btn-custom {
+    background-color: #5EC8E5;
+    color: white;
+    border-width: 0;
+    
+}
+
+button.btn-custom:hover {
+    background-color:#FF5745;
+    
+}
+

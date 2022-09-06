@@ -54,7 +54,7 @@ const ContactForm = () => {
                   name="info"
                 />
               </Form.Group>
-              <Button type="submit" style={{ margin: 10 }}>Send</Button>
+              <Button variant="custom" type="submit" style={{ margin: 10 }}>Send</Button>
             </Form>
           </Col>
           <Col lr={6}>
@@ -63,7 +63,10 @@ const ContactForm = () => {
           </Col>
         </Row>
       </Container>
-    </>
+ 
+</>
+
+   
   )
 }
 
