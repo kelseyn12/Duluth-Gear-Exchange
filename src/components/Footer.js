@@ -1,5 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 
 const Footer = () => {
   return (
@@ -10,15 +13,15 @@ Tues - Fri: 11am - 6pm <br />
 Sat - Sun: 10am - 5pm
 </div>  
 <div className='footerInfo'>
-PHONE: 218-481-7270<br />
-EMAIL: greatlakesgearexchange@gmail.com <br />
-INSTAGRAM: <a href='https://www.instagram.com/greatlakesgearexchange/'>@greatlakesgearexchange</a>
+<FontAwesomeIcon icon={faPhone} /> 218-481-7270<br />
+<FontAwesomeIcon icon={faEnvelope} /> greatlakesgearexchange@gmail.com <br />
+<FontAwesomeIcon icon={faInstagram} /> <a className='instagram' href='https://www.instagram.com/greatlakesgearexchange/'>@greatlakesgearexchange</a>
 </div>
 <div className='footerLinks'>
-<Link className='navBarLinkTop' style={{textDecoration: 'none', color: '#5EC8E5'}} to='/ourStaff'>Our Staff</Link>
-<Link className='navBarLinkTop' style={{textDecoration: 'none', color: '#5EC8E5'}} to='/repairs'>Repairs</Link><br />
-<Link className='navBarLinkBottom' style={{textDecoration: 'none', color: '#5EC8E5'}} to='/sellYourGear'>Sell Gear</Link>
-<Link className='navBarLinkBottom' style={{textDecoration: 'none', color: '#5EC8E5'}} to='/contact'>Contact</Link>
+<Link className='navBarLinkTop footerNavLink' style={{textDecoration: 'none', color: '#5EC8E5'}} to='/ourStaff'>Our Staff</Link>
+<Link className='navBarLinkTop footerNavLink' style={{textDecoration: 'none', color: '#5EC8E5'}} to='/repairs'>Repairs</Link><br />
+<Link className='navBarLinkBottom footerNavLink' style={{textDecoration: 'none', color: '#5EC8E5'}} to='/sellYourGear'>Sell Gear</Link>
+<Link className='navBarLinkBottom footerNavLink' style={{textDecoration: 'none', color: '#5EC8E5'}} to='/contact'>Contact</Link>
 </div>
 
 <div className="footerMap">

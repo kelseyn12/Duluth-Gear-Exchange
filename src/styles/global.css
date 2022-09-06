@@ -10,7 +10,7 @@ body {
     
     align-items: center;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     
     
 }
@@ -19,6 +19,8 @@ text-decoration: none;
 position: relative;
 
 }
+
+
 
 .nav-link::after {
     content: '';
@@ -51,7 +53,7 @@ footer {
     padding: 20px;
     color: #5EC8E5;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     /* position: fixed;
     bottom: 0;
@@ -61,20 +63,48 @@ footer {
     text-align: center;
 }
 
-.footerLinks{
-    margin: 10px;
+.footerNavLink {
+    text-decoration: none;
+    position: relative;
 }
+.footerNavLink::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #FF5745;
+    bottom: 0;
+    left:0;
+    transition: transform 0.25 ease-out;
+    transform: scaleX(0);
+
+}
+.footerNavLink:hover::after {
+    transform: scaleX(1);
+    
+    }
+
 .navBarLinkTop{
-   margin: 5px; 
-   padding: 2px;
+   margin: 40px 40px 0px 0px; 
     
 }
 
 .navBarLinkBottom{
-    margin: 5px; 
-    padding: 2px;
+   margin: 40px 40px 40px 0px; 
+     
+   
      
  } 
+
+ .instagram {
+    text-decoration: none;
+    color:#5EC8E5
+}
+
+.instagram:hover {
+    text-decoration: none;
+    color:#FF5745
+}
 
  @media only screen and (max-width: 600px ) {
     .logo {
