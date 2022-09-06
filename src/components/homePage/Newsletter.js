@@ -20,13 +20,13 @@ function Newsletter() {
       noValidate=""
     >
       <div id="mc_embed_signup_scroll">
-        <h1>Sign up for our Newsletter</h1>
+        <h1 className='signUp'>Sign up for our Newsletter</h1>
         <div className="indicates-required">
-          <span className="asterisk">*</span> indicates required
+          <span className="asterisk">*</span> <span style={{color:'#042F4A'}}>indicates required</span>
         </div>
         <div className="mc-field-group">
           <label htmlFor="mce-EMAIL">
-            Email Address <span className="asterisk">*</span>
+            <span style={{color:'#042F4A'}}>Email Address</span> <span className="asterisk">*</span>
           </label>
           <input
             type="email"

@@ -110,14 +110,16 @@
     clear:left;  
   }
 
+  .signUp {
+    color: #042F4A;
+  }
 
   #mc_embed_signup input.button {
     background-color: #FF5745;
 }
 
 #mc_embed_signup input.button:hover {
-    background-color:#B73535 ;
-    color: black;
+    background-color:#042F4A ;
     
 }
 
