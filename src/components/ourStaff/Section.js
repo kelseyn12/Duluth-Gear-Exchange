@@ -23,7 +23,6 @@ const Section = () => {
             gatsbyImageData
             description
           }
-          staffOneLine
         }
       }
     }
@@ -45,7 +44,6 @@ const Section = () => {
         image={ item.node.staffImages[0].gatsbyImageData }
         alt={ 'staff image' } />
 
-      { item.node.staffOneLine }
 
       <Modal bio={ item.node.staffBio.staffBio } name={ item.node.title } image={ item.node.staffImages[0].gatsbyImageData } />
   

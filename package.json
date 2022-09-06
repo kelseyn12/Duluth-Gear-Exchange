@@ -19,6 +19,7 @@
     "gatsby": "^4.17.2",
     "gatsby-plugin-image": "^2.19.0",
     "gatsby-plugin-instagram-embed": "^4.0.0",
+    "gatsby-plugin-mailchimp": "^5.2.2",
     "gatsby-plugin-react-helmet": "^5.20.0",
     "gatsby-plugin-sharp": "^4.19.0",
     "gatsby-remark-images-contentful": "^5.19.0",

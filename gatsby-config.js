@@ -53,6 +53,12 @@ module.exports = {
         access_token: process.env.IG_TOKEN 
       },
     },
+    {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+          endpoint: process.env.MAILCHIMP_ENDPOINT 
+      },
+  },
     
   ],
 };

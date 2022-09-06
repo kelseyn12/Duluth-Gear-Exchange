@@ -5,14 +5,14 @@ textarea {
 
 
 button.btn-custom {
-    background-color: #5EC8E5;
+    background-color: #FF5745;
     color: white;
     border-width: 0;
     
 }
 
 button.btn-custom:hover {
-    background-color:#FF5745;
-    
+    background-color:#5EC8E5;
+    color: white;
 }
 

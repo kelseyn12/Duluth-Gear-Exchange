@@ -20,7 +20,7 @@ function Newsletter() {
       noValidate=""
     >
       <div id="mc_embed_signup_scroll">
-        <h2>Sign up for our Newsletter</h2>
+        <h1>Sign up for our Newsletter</h1>
         <div className="indicates-required">
           <span className="asterisk">*</span> indicates required
         </div>
@@ -36,6 +36,9 @@ function Newsletter() {
             id="mce-EMAIL"
             required=""
           />
+        </div>
+        <div hidden="true">
+          <input type="hidden" name="tags" defaultValue="94275,14431" />
         </div>
         <div id="mce-responses" className="clear">
           <div

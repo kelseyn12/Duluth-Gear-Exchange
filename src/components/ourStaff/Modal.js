@@ -16,7 +16,7 @@ const StaffCard = ({bio, name, image}) => {
   return (
     <>
     <Button variant="link" onClick={handleShow}>
-      Arrow
+    {name}
       </Button>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
