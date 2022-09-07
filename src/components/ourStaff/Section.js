@@ -33,24 +33,20 @@ const Section = () => {
   return (
     <>
     <h1>Our Rockin' Staff</h1>
-    {data.allContentfulStaff.edges.map (( item, i ) => {
-      
-      return (
-        
-        <div className='staffImages' key={i} >
-
-        <GatsbyImage
-        
-        className='staffPhoto'
-        image={ item.node.staffImages[0].gatsbyImageData }
-        alt={ 'staff image' } />
-
-
-      <Modal bio={ item.node.staffBio.staffBio } name={ item.node.title } image={ item.node.staffImages[0].gatsbyImageData } />
-  
+    <div className='staffContainer'>
+      {data.allContentfulStaff.edges.map (( item, i ) => {
+        return (
+          <div className='staffImages' key={i}>
+            <GatsbyImage
+              className='staffPhoto'
+              image={ item.node.staffImages[0].gatsbyImageData }
+              alt={ 'staff image' }
+            />
+            <Modal bio={ item.node.staffBio.staffBio } name={ item.node.title } image={ item.node.staffImages[0].gatsbyImageData } />
+        </div>
+        )
+      })}
     </div>
-      )
-    })}
     
     </>
   )

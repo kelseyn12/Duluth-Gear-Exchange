@@ -1,8 +1,24 @@
 .staffPhoto {
     width: 200px;
     height: 200px;
-    border-radius: 100px;
+    border-radius: 95px;
 }
 h1 {
-    color: #042F4A
+    display: flex;
+    justify-content: center;
+    color: #042F4A;
+    margin-bottom: 40px;
+}
+.staffContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.staffImages {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
 }
