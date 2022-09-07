@@ -80,6 +80,7 @@ footer::before {
 .footerNavLink {
     text-decoration: none;
     position: relative;
+    display: flex;
 }
 .footerNavLink::after {
     content: '';
@@ -98,17 +99,6 @@ footer::before {
     
     }
 
-.navBarLinkTop{
-   margin: 40px 40px 0px 0px; 
-    
-}
-
-.navBarLinkBottom{
-   margin: 40px 40px 40px 0px; 
-     
-   
-     
- } 
 
  .instagram {
     position: relative;
