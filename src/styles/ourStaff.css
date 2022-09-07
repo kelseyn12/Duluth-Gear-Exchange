@@ -1,4 +1,8 @@
 .staffPhoto {
     width: 200px;
     height: 200px;
+    border-radius: 100px;
+}
+h1 {
+    color: #042F4A
 }

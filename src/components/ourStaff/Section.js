@@ -37,9 +37,10 @@ const Section = () => {
       
       return (
         
-        <div key={i} >
+        <div className='staffImages' key={i} >
 
         <GatsbyImage
+        
         className='staffPhoto'
         image={ item.node.staffImages[0].gatsbyImageData }
         alt={ 'staff image' } />

@@ -160,6 +160,7 @@ a:hover {
     display: flex;
     text-align: center;
     margin-top: 10px;
+    flex-direction: column;
    }
    .footerLinks{
     display: none;
