@@ -122,6 +122,18 @@ footer::before {
     color:#FF5745
 }
 
+a {
+    position: relative;
+    text-decoration: none;
+    color:#5EC8E5;
+    
+}
+
+a:hover {
+    text-decoration: none;
+    color:#FF5745
+}
+
  @media only screen and (max-width: 600px ) {
     .logo {
         height: 90px ;

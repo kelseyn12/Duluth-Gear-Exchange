@@ -13,8 +13,8 @@ Tues - Fri: 11am - 6pm <br />
 Sat - Sun: 10am - 5pm
 </div>  
 <div className='footerInfo'>
-<FontAwesomeIcon icon={faPhone} /> 218-481-7270<br />
-<FontAwesomeIcon icon={faEnvelope} /> greatlakesgearexchange@gmail.com <br />
+<FontAwesomeIcon icon={faPhone} /> <a href="tel:+12184817270">218-481-7270</a><br />
+<FontAwesomeIcon icon={faEnvelope} /> <a href="mailto:greatlakesgearexchange@gmail.com">greatlakesgearexchange@gmail.com</a><br />
 <FontAwesomeIcon icon={faInstagram} /> <a className='instagram' href='https://www.instagram.com/greatlakesgearexchange/'>@greatlakesgearexchange</a>
 </div>
 <div className='footerLinks'>
