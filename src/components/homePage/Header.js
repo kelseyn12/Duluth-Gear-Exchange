@@ -22,13 +22,19 @@ const Header = () => {
   const announcementBanner = data.contentfulAnnouncementBanner.bannerMessage
   return (
     <>
-    
-   {
+    {
+   announcementBanner.display ?
+   <div className="announcementBanner">
+   <h2>{announcementBanner.bannerMessage}</h2>
+   </div>
+   : null
+  }
+   {/* {
    announcementBanner.display  && 
    <div className="announcementBanner">
    <h2>{announcementBanner.bannerMessage}</h2>
    </div>
-  }
+  } */}
       <h1 className="callToAction">Buy Gear. Sell Gear.</h1>
       <Carousel controls={false} indicators={false} pause={false}>
         {data.contentfulCarousel.Images.map((node, index) => {
