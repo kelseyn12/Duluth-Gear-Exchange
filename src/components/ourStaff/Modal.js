@@ -15,7 +15,7 @@ const StaffCard = ({bio, name, image}) => {
 
   return (
     <>
-    <Button variant="link" onClick={handleShow}>
+    <Button className='btn-modal' variant="link" onClick={handleShow}>
     {name}
       </Button>
       <Modal show={show} onHide={handleClose}>
@@ -24,14 +24,10 @@ const StaffCard = ({bio, name, image}) => {
         </Modal.Header>
         
         <Modal.Body> 
-          {bio} 
-         <GatsbyImage image={image} />
+          <p>
+          {bio} </p>
+         <GatsbyImage className='modalImg' image={image} />
         </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-        </Modal.Footer>
       </Modal>
   
     
