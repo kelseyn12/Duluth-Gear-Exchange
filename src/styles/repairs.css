@@ -1,0 +1,46 @@
+h2 {
+    text-align: center;
+    color: #042F4A;
+    margin-bottom: -20px;
+}
+h4 {
+    text-align: center;
+    color: #042F4A;
+}
+h6 {
+    text-align: center;
+    color: #FF5745;
+    font-weight: 600;
+}
+h3 {
+    color: #042F4A;
+    margin-top: 50px;
+    text-align: center;
+}
+
+h5 {
+    color:#042F4A;
+    text-align: center;
+}
+
+.accordion-button {
+    color: #042F4A;
+    opacity: 0.6;
+    font-weight:600
+    /* background-color: #FF5745; */
+}
+
+.accordion-item {
+    color: #042F4A;
+    background-color: #F9F9F7;
+}
+
+.questions {
+    color:#042F4A;
+}
+
+.repairEmailNum {
+    color:#042F4A;
+}
+
+

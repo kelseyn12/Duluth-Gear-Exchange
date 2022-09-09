@@ -13,7 +13,7 @@ const Section = () => {
     </h6>
 
     <h2 className='nowAcceptingText'>
-    Now Accepting &nbsp;<Link style={{ color: '#FF5745'}} to='/sellYourGear'> Spring/Summer </Link> &nbsp;Consignment 
+    Now Accepting &nbsp;<Link style={{ color: '#FF5745'}} to='/sellYourGear'> SPRING/SUMMER </Link> &nbsp;Consignment 
     </h2>
     </>
   )

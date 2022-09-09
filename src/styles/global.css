@@ -4,6 +4,20 @@
 
 body {
     position: relative;
+    background-color: #F9F9F7
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    background: url('https://st2.depositphotos.com/3474539/7893/v/600/depositphotos_78932196-stock-illustration-topographic-map-seamless-pattern-vector.jpg');
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    mix-blend-mode: multiply;
+    object-fit: cover;
+    opacity: 0.11;
 }
 
 .nav {
@@ -17,6 +31,7 @@ body {
 .nav-link {
 text-decoration: none;
 position: relative;
+color: #F9F9F7;
 
 }
 

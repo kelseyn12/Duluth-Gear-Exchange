@@ -16,19 +16,19 @@ const Navigation = () => {
     <Nav className="nav" >
     
       <Nav.Item>
-      <Nav.Link style={{ color: '#042F4A'}} href="/">Home</Nav.Link>
+      <Nav.Link style={{ color: '#042F4A'}} href="/">HOME</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-      <Nav.Link style={{ color: '#042F4A'}} href="/sellYourGear">Sell Your Gear</Nav.Link>
+      <Nav.Link style={{ color: '#042F4A'}} href="/sellYourGear">SELL YOUR GEAR</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-      <Nav.Link style={{ color: '#042F4A'}} href="/repairs">Repairs</Nav.Link>
+      <Nav.Link style={{ color: '#042F4A'}} href="/repairs">REPAIRS</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-      <Nav.Link style={{ color: '#042F4A'}} href="/ourStaff">Our Staff</Nav.Link>
+      <Nav.Link style={{ color: '#042F4A'}} href="/ourStaff">OUR STAFF</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-      <Nav.Link style={{ color: '#042F4A'}} href="/contact">Contact</Nav.Link>
+      <Nav.Link style={{ color: '#042F4A'}} href="/contact">CONTACT</Nav.Link>
       </Nav.Item>
       
     </Nav>

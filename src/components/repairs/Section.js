@@ -18,14 +18,16 @@ const Section = () => {
 
   return (
     <>
-      <h2>We fix zippers and we patch tents!</h2>
+      <h2>FIX ZIPPERS | PATCH TENTS</h2>
       <br />
-      <h3>
-        Zipper repairs on jackets, sleeping bags, tents, and soft-sided packs
-        Sewing patches on tents
-      </h3>
+      <h6>
+      • ZIPPER REPAIRS ON JACKETS, SLEEPING BAGS, TENTS, AND SOFT-SIDED PACKS •
+        </h6>
+        <h6>
+        • SEWING PATCHES ON TENTS •</h6>
+      
 
-      <h3>Cost Estimates</h3>
+      <h3>COST ESTIMATES</h3>
       {data.allContentfulCostEstimates.edges.map( ( {node, index} ) => {
         return (
         <div key={index} className="repairCost">
@@ -40,11 +42,11 @@ const Section = () => {
         </div>
       )
 })}
-      <h5>Turn-Around Time: 2-3 weeks unless communicated otherwise</h5>
-      <h6>
-        Questions? <br />
-        Email: repairsbynils@gmail.com <br />
-        Call: 218-481-7270
+      <h6>• TURN-AROUND TIME: 2-3 WEEKS •</h6>
+      <h6 className="questions">
+        QUESTIONS? <br />
+        EMAIL: <a className="repairEmailNum" href="mailto:repairsbynils@gmail.com">REPAIRSBYNILS@GMAIL.COM</a> <br />
+        CALL: <a className="repairEmailNum" href="tel:+12184817270">218-481-7270</a>
       </h6>
     </>
   )
