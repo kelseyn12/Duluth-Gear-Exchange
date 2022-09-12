@@ -20,13 +20,13 @@ function Newsletter() {
       noValidate=""
     >
       <div id="mc_embed_signup_scroll">
-        <h1 className='signUp'>Sign up for our Newsletter</h1>
+        <h1 className='signUp'>SIGN UP FOR OUR NEWSLETTER</h1>
         <div className="indicates-required">
-          <span className="asterisk">*</span> <span style={{color:'#042F4A'}}>indicates required</span>
+          <span className="asterisk">*</span> <span style={{color:'#042F4A'}}>INDICATES REQUIRED</span>
         </div>
         <div className="mc-field-group">
           <label htmlFor="mce-EMAIL">
-            <span style={{color:'#042F4A'}}>Email Address</span> <span className="asterisk">*</span>
+            <span style={{color:'#042F4A'}}>EMAIL ADDRESS</span> <span className="asterisk">*</span>
           </label>
           <input
             type="email"
@@ -67,7 +67,7 @@ function Newsletter() {
         <div className="clear">
           <input
             type="submit"
-            defaultValue="Subscribe"
+            value="SUBMIT"
             name="subscribe"
             id="mc-embedded-subscribe"
             className="button"

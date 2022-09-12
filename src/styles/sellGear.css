@@ -1,0 +1,74 @@
+h1 {
+    color: #042F4A;
+}
+
+.lookingForNotAccepting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lookingFor {
+    margin: 10px;
+    max-width: 600px;
+    max-height: 600px;
+}
+
+.notAccepting {
+    margin: 10px;
+    max-width: 600px;
+    max-height: 600px;
+}
+
+.frequentQuestions {
+    margin: 20px
+}
+
+.accordion-button {
+    color: #042F4A;
+    opacity: 0.6;
+    font-weight:600;
+}
+
+.accordion-item {
+    color: #042F4A;
+    font-weight: 600;
+    background-color: #F9F9F7;
+}
+
+.questions {
+    color:#042F4A;
+}
+
+.pdfForm{
+    margin: 20px;
+    font-weight: 500;
+}
+
+th {
+    padding-bottom: 20px
+}
+
+
+@media only screen and (max-width: 600px) {
+    .lookingForNotAccepting {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      
+    }
+    h1.actionStatement {
+        display: none;
+    }
+    .frequentQuestionAccordion {
+        align-items: center;
+        
+    }
+    th {
+        text-align: center;
+        padding-bottom: 20px
+    }
+    
+}

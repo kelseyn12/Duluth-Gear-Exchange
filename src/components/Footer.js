@@ -9,19 +9,19 @@ const Footer = () => {
     <footer>
 <div className='footerHours'>    
 HOURS:<br />
-Tues - Fri: 11am - 6pm <br />
-Sat - Sun: 10am - 5pm
+TUES - FRI: 11AM - 6PM <br />
+SAT - SUN: 10AM - 5PM
 </div>  
 <div className='footerInfo'>
 <FontAwesomeIcon icon={faPhone} /> <a href="tel:+12184817270">218-481-7270</a><br />
-<FontAwesomeIcon icon={faEnvelope} /> <a href="mailto:greatlakesgearexchange@gmail.com">greatlakesgearexchange@gmail.com</a><br />
-<FontAwesomeIcon icon={faInstagram} /> <a className='instagram' href='https://www.instagram.com/greatlakesgearexchange/'>@greatlakesgearexchange</a>
+<FontAwesomeIcon icon={faEnvelope} /> <a href="mailto:greatlakesgearexchange@gmail.com">GREATLAKESGEAREXCHANGE@GMAIL.COM</a><br />
+<FontAwesomeIcon icon={faInstagram} /> <a className='instagram' href='https://www.instagram.com/greatlakesgearexchange/'>GREATLAKESGEAREXCHANGE</a>
 </div>
 <div className='footerLinks'>
-<Link className='footerNavLink' style={{textDecoration: 'none', color: '#5EC8E5'}} to='/ourStaff'>Our Staff</Link>
-<Link className='footerNavLink' style={{textDecoration: 'none', color: '#5EC8E5'}} to='/repairs'>Repairs</Link>
-<Link className='footerNavLink' style={{textDecoration: 'none', color: '#5EC8E5'}} to='/sellYourGear'>Sell Gear</Link>
-<Link className='footerNavLink' style={{textDecoration: 'none', color: '#5EC8E5'}} to='/contact'>Contact</Link>
+<Link className='footerNavLink' style={{textDecoration: 'none', color: '#5EC8E5'}} to='/ourStaff'>OUR STAFF</Link>
+<Link className='footerNavLink' style={{textDecoration: 'none', color: '#5EC8E5'}} to='/repairs'>REPAIRS</Link>
+<Link className='footerNavLink' style={{textDecoration: 'none', color: '#5EC8E5'}} to='/sellYourGear'>SELL GEAR</Link>
+<Link className='footerNavLink' style={{textDecoration: 'none', color: '#5EC8E5'}} to='/contact'>CONTACT</Link>
 </div>
 
 <div className="footerMap">

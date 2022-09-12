@@ -23,12 +23,12 @@ const FrequentQuestions = () => {
 
   return (
     <>
-      <h1>FREQUENTLY ASKED QUESTIONS</h1>
+      <h2 className="frequentQuestions">FREQUENTLY ASKED QUESTIONS</h2>
       {data.allContentfulQuestionAnswer.edges.map(( {node, index} ) => {
        
       
         return(
-        <div key={node.question} className="repairCost">
+        <div key={node.question} className="frequentQuestionAccordion">
           <Accordion>
             <Accordion.Item eventKey="0">
               <Accordion.Header>
@@ -40,6 +40,7 @@ const FrequentQuestions = () => {
                     __html: node.answer.childMarkdownRemark.html
                   }}
                   alt={node.answer}
+                 
                 />
                 
               </Accordion.Body>

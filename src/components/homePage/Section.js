@@ -5,15 +5,15 @@ const Section = () => {
   return (
     <>
     <h6 className='storeInfo'>
-    510 E 4th Street Duluth MN <br />
-    Tues - Fri: 11am - 6pm <br />
-    Sat - Sun: 10am - 5pm <br /> <br />
-    GLGEcounter@gmail.com <br />
+    510 E 4TH STREET DULUTH MN <br />
+    TUES - FRI: 11AM - 6PM <br />
+    SAT - SUN: 10AM - 5PM <br /> <br />
+    GLGECOUNTER@GMAIL.COM <br />
     218-481-7270
     </h6>
 
     <h2 className='nowAcceptingText'>
-    Now Accepting &nbsp;<Link style={{ color: '#FF5745'}} to='/sellYourGear'> SPRING/SUMMER </Link> &nbsp;Consignment 
+    NOW ACCEPTING &nbsp;<Link style={{ color: '#FF5745'}} to='/sellYourGear'> SPRING/SUMMER </Link> &nbsp;CONSIGNMENT 
     </h2>
     </>
   )

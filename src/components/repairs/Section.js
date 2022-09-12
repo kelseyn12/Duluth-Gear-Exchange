@@ -18,7 +18,7 @@ const Section = () => {
 
   return (
     <>
-      <h2>FIX ZIPPERS | PATCH TENTS</h2>
+      <h2 className="repairType">FIX ZIPPERS | PATCH TENTS</h2>
       <br />
       <h6>
       • ZIPPER REPAIRS ON JACKETS, SLEEPING BAGS, TENTS, AND SOFT-SIDED PACKS •
@@ -42,7 +42,7 @@ const Section = () => {
         </div>
       )
 })}
-      <h6>• TURN-AROUND TIME: 2-3 WEEKS •</h6>
+      <h6 className="turnAroundTime">• TURN-AROUND TIME: 2-3 WEEKS •</h6>
       <h6 className="questions">
         QUESTIONS? <br />
         EMAIL: <a className="repairEmailNum" href="mailto:repairsbynils@gmail.com">REPAIRSBYNILS@GMAIL.COM</a> <br />

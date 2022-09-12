@@ -25,18 +25,19 @@ const Section = () => {
 
   return (
     <>
-      <h1>Dust off your old gear. Give it new life.</h1>
-      <h3>Looking For/Not Accepting Content Model</h3>
+      <h1 className="actionStatement">DUST OFF OLD GEAR | GIVE IT NEW LIFE</h1>
       {data.allContentfulLookingForNotAccepting.edges.map( ( {node, index} ) => {
         return (
-          <div key={index} className="lookingForNotAccepting">
+          <div className="lookingForNotAccepting" key={index}>
          
         <GatsbyImage
+        className="lookingFor"
      image={ node.lookingFor.gatsbyImageData } 
      alt={ node.description}
      key={index}
       />
       <GatsbyImage
+      className="notAccepting"
      image={ node.notAccepting.gatsbyImageData } 
      alt={ node.description}
      key={index}
@@ -44,21 +45,7 @@ const Section = () => {
         </div>
         )})
         }
-        
       
-      <h2>
-        Never consigned?
-        <br />
-        Have more than 20 items?
-        <br />
-        Have a large item, like a bike or boat?
-        <br />
-        Curious if we’ll accept it?
-        <br />
-        CALL US FIRST!
-        <br />
-        218-481-7270
-      </h2>
     </>
   )
 }

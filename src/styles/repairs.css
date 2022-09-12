@@ -32,6 +32,7 @@ h5 {
 
 .accordion-item {
     color: #042F4A;
+    font-weight: 600;
     background-color: #F9F9F7;
 }
 
@@ -43,4 +44,30 @@ h5 {
     color:#042F4A;
 }
 
+.repairCarousel{   
+    width:900px;
+    height:500px;
+    margin: auto;
+  }
+  .repairImages{
+    width: 900px;
+    height: 500px;
+  }
+
+  .carousel.slide{
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: 900px) {
+    .carousel {
+      width:auto;
+      height:auto;
+    }
+    .repairType {
+        padding-bottom: 20px;
+    }
+    .turnAroundTime {
+        padding-top: 20px;
+    }
+}
 

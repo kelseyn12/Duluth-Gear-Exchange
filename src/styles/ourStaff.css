@@ -47,6 +47,7 @@ h1 {
 
 .btn-modal {
     color: #FF5745;
+    z-index: 1;
 }
 
 .btn-modal:hover {

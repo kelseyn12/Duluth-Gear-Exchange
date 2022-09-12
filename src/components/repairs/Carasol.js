@@ -19,13 +19,13 @@ const Carasol = () => {
   return (
     
     <>
-    <Carousel indicators={false}>
+    <Carousel className='repairCarousel' indicators={false}>
     {data.contentfulCarousel.Images.map( (node, index) => {
       return (
         <Carousel.Item>
       <GatsbyImage
       key={index}
-      className="d-block w-100"
+      className="d-block w-100 repairImages"
      image={ node.gatsbyImageData } 
      alt={ node.description}
       />

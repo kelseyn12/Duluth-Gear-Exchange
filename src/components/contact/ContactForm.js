@@ -5,10 +5,11 @@ import Map from "./Map"
 const ContactForm = () => {
   return (
     <>
-      <Container>
+      <Container className="form" >
         <Row>
           <Col lr={6}>
             <Form
+            
               name="contact"
               method="post"
               data-netlify="true"
@@ -24,37 +25,37 @@ const ContactForm = () => {
               <Row>
                 <Col md={6}>
                   <Form.Group controlId="formBasicFirstName">
-                    <Form.Label>First Name</Form.Label>
-                    <Form.Control required type="text" placeholder="Jane" name="first-name" />
+                    <Form.Label style={{color:'#042F4A'}}>FIRST NAME</Form.Label>
+                    <Form.Control required type="text" placeholder="JANE" name="first-name" />
                   </Form.Group>
                 </Col>
                 <Col md={6}>
                   <Form.Group controlId="formBasicLastName">
-                    <Form.Label>Last Name</Form.Label>
-                    <Form.Control required type="text" placeholder="Doe" name="last-name" />
+                    <Form.Label style={{ color:'#042F4A'}}>LAST NAME</Form.Label>
+                    <Form.Control required type="text" placeholder="DOE" name="last-name" />
                   </Form.Group>
                 </Col>
               </Row>
               <Form.Group controlId="formBasicEmail">
-                <Form.Label>Email Address</Form.Label>
+                <Form.Label style={{color:'#042F4A'}}>EMAIL ADDRESS</Form.Label>
                 <Form.Control
                   required
                   type="email"
-                  placeholder="name@name.com"
+                  placeholder="NAME@NAME.COM"
                   name="email"
                 />
               </Form.Group>
               <Form.Group controlId="formBasicTextBox">
-                <Form.Label>Message</Form.Label>
+                <Form.Label style={{color:'#042F4A'}}>MESSAGE</Form.Label>
                 <Form.Control
                   required
                   as="textarea"
                   rows="3"
-                  placeholder="I love Duluth Gear Exchange!"
+                  placeholder="I LOVE DULUTH GEAR EXCHANGE!"
                   name="info"
                 />
               </Form.Group>
-              <Button variant="custom" type="submit" style={{ margin: 10 }}>Send</Button>
+              <Button variant="custom" type="submit" style={{ margin: 10 }}>SEND</Button>
             </Form>
           </Col>
           <Col lr={6}>

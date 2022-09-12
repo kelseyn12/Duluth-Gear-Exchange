@@ -29,6 +29,9 @@ const Header = () => {
    <h4>{announcementBanner.bannerMessage}</h4>
    </div>
   )}
+
+
+  
       <h1 className="callToAction">BUY GEAR | SELL GEAR</h1>
       <Carousel controls={false} indicators={false} pause={false}>
         {data.contentfulCarousel.Images.map((node, index) => {

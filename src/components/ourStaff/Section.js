@@ -32,7 +32,7 @@ const Section = () => {
 
   return (
     <>
-    <h1>Our Rockin' Staff</h1>
+    <h1>OUR ROCKIN' STAFF</h1>
     <div className='staffContainer'>
       {data.allContentfulStaff.edges.map (( item, i ) => {
         return (
