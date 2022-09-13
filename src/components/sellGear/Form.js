@@ -1,13 +1,21 @@
-import React from 'react'
-
+import React from "react"
 
 const Form = () => {
   return (
     <>
-    <h2 className='pdfForm'>SAVE TIME! FILL OUT THIS<a href={`/DGE.pdf`} target="_blank" rel="noreferrer" id="consignmentPdf"> CONSIGNMENT FORM
-    </a>  AT HOME!     
-    </h2>
-    
+      <h2 className="pdfForm">
+        SAVE TIME! FILL OUT THIS
+        <a
+          href={`/DGE.pdf`}
+          target="_blank"
+          rel="noreferrer"
+          id="consignmentPdf"
+        >
+          {" "}
+          CONSIGNMENT FORM
+        </a>{" "}
+        AT HOME!
+      </h2>
     </>
   )
 }

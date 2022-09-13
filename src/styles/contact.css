@@ -1,29 +1,24 @@
-
-
 textarea {
-    max-height: 300px;
-    max-width: 600px;
+  max-height: 300px;
+  max-width: 600px;
 }
 
-
 button.btn-custom {
-    background-color: #FF5745;
-    color: white;
-    border-width: 0;
-    
+  background-color: #ff5745;
+  color: white;
+  border-width: 0;
 }
 
 button.btn-custom:hover {
-    background-color:#5EC8E5;
-    color: white;
+  background-color: #5ec8e5;
+  color: white;
 }
 
-@media only screen and (max-width: 600px ) {
-.map {
+@media only screen and (max-width: 600px) {
+  .map {
     display: flex;
     justify-content: center;
     padding-bottom: 10px;
     padding-top: 10px;
+  }
 }
-}
-

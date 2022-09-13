@@ -5,11 +5,10 @@ import Map from "./Map"
 const ContactForm = () => {
   return (
     <>
-      <Container className="form" >
+      <Container className="form">
         <Row>
           <Col lr={6}>
             <Form
-            
               name="contact"
               method="post"
               data-netlify="true"
@@ -25,19 +24,35 @@ const ContactForm = () => {
               <Row>
                 <Col md={6}>
                   <Form.Group controlId="formBasicFirstName">
-                    <Form.Label style={{color:'#042F4A'}}>FIRST NAME</Form.Label>
-                    <Form.Control required type="text" placeholder="JANE" name="first-name" />
+                    <Form.Label style={{ color: "#042F4A" }}>
+                      FIRST NAME
+                    </Form.Label>
+                    <Form.Control
+                      required
+                      type="text"
+                      placeholder="JANE"
+                      name="first-name"
+                    />
                   </Form.Group>
                 </Col>
                 <Col md={6}>
                   <Form.Group controlId="formBasicLastName">
-                    <Form.Label style={{ color:'#042F4A'}}>LAST NAME</Form.Label>
-                    <Form.Control required type="text" placeholder="DOE" name="last-name" />
+                    <Form.Label style={{ color: "#042F4A" }}>
+                      LAST NAME
+                    </Form.Label>
+                    <Form.Control
+                      required
+                      type="text"
+                      placeholder="DOE"
+                      name="last-name"
+                    />
                   </Form.Group>
                 </Col>
               </Row>
               <Form.Group controlId="formBasicEmail">
-                <Form.Label style={{color:'#042F4A'}}>EMAIL ADDRESS</Form.Label>
+                <Form.Label style={{ color: "#042F4A" }}>
+                  EMAIL ADDRESS
+                </Form.Label>
                 <Form.Control
                   required
                   type="email"
@@ -46,7 +61,7 @@ const ContactForm = () => {
                 />
               </Form.Group>
               <Form.Group controlId="formBasicTextBox">
-                <Form.Label style={{color:'#042F4A'}}>MESSAGE</Form.Label>
+                <Form.Label style={{ color: "#042F4A" }}>MESSAGE</Form.Label>
                 <Form.Control
                   required
                   as="textarea"
@@ -55,19 +70,17 @@ const ContactForm = () => {
                   name="info"
                 />
               </Form.Group>
-              <Button variant="custom" type="submit" style={{ margin: 10 }}>SEND</Button>
+              <Button variant="custom" type="submit" style={{ margin: 10 }}>
+                SEND
+              </Button>
             </Form>
           </Col>
           <Col lr={6}>
-            {/* Have questions? Shoot us a message and we will get back to you! */}
             <Map />
           </Col>
         </Row>
       </Container>
- 
-</>
-
-   
+    </>
   )
 }
 

@@ -1,74 +1,70 @@
 h1 {
-    color: #042F4A;
+  color: #042f4a;
 }
 
 .lookingForNotAccepting {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .lookingFor {
-    margin: 10px;
-    max-width: 600px;
-    max-height: 600px;
+  margin: 10px;
+  max-width: 600px;
+  max-height: 600px;
 }
 
 .notAccepting {
-    margin: 10px;
-    max-width: 600px;
-    max-height: 600px;
+  margin: 10px;
+  max-width: 600px;
+  max-height: 600px;
 }
 
 .frequentQuestions {
-    margin: 20px
+  margin: 20px;
 }
 
 .accordion-button {
-    color: #042F4A;
-    opacity: 0.6;
-    font-weight:600;
+  color: #042f4a;
+  opacity: 0.6;
+  font-weight: 600;
 }
 
 .accordion-item {
-    color: #042F4A;
-    font-weight: 600;
-    background-color: #F9F9F7;
+  color: #042f4a;
+  font-weight: 600;
+  background-color: #f9f9f7;
 }
 
 .questions {
-    color:#042F4A;
+  color: #042f4a;
 }
 
-.pdfForm{
-    margin: 20px;
-    font-weight: 500;
+.pdfForm {
+  margin: 20px;
+  font-weight: 500;
 }
 
 th {
-    padding-bottom: 20px
+  padding-bottom: 20px;
 }
 
-
 @media only screen and (max-width: 600px) {
-    .lookingForNotAccepting {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      margin: 0;
-      
-    }
-    h1.actionStatement {
-        display: none;
-    }
-    .frequentQuestionAccordion {
-        align-items: center;
-        
-    }
-    th {
-        text-align: center;
-        padding-bottom: 20px
-    }
-    
+  .lookingForNotAccepting {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+  h1.actionStatement {
+    display: none;
+  }
+  .frequentQuestionAccordion {
+    align-items: center;
+  }
+  th {
+    text-align: center;
+    padding-bottom: 20px;
+  }
 }

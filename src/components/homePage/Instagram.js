@@ -15,8 +15,9 @@ const PostDisplay = ({ item }) => {
     setIsHover(false)
   }
   return (
-    <Container fluid
-     className="picContainer"
+    <Container
+      fluid
+      className="picContainer"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       role="none"
@@ -28,7 +29,6 @@ const PostDisplay = ({ item }) => {
           alt={item.node.caption || "Instagram Post"}
           fluid={item.node.fluid}
           className="image"
-          
         />
         <figcaption className="imgtext">
           {isHover && <p> {item.node.caption}</p>}

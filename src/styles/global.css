@@ -1,196 +1,174 @@
 * {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-
 body {
-    position: relative;
-    background-color: #F9F9F7
+  position: relative;
+  background-color: #f9f9f7;
 }
 
 body::before {
-    content: '';
-    position: absolute;
-    background: url('https://st2.depositphotos.com/3474539/7893/v/600/depositphotos_78932196-stock-illustration-topographic-map-seamless-pattern-vector.jpg');
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    mix-blend-mode: multiply;
-    object-fit: cover;
-    opacity: 0.11;
-    z-index: -1;
+  content: "";
+  position: absolute;
+  background: url("https://st2.depositphotos.com/3474539/7893/v/600/depositphotos_78932196-stock-illustration-topographic-map-seamless-pattern-vector.jpg");
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  mix-blend-mode: multiply;
+  object-fit: cover;
+  opacity: 0.11;
+  z-index: -1;
 }
 
 .nav {
-    
-    align-items: center;
-    display: flex;
-    justify-content: space-evenly;
-    
-    
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
 }
 .nav-link {
-text-decoration: none;
-position: relative;
-color: #F9F9F7;
-
+  text-decoration: none;
+  position: relative;
+  color: #f9f9f7;
 }
 a:hover {
-cursor: pointer;
+  cursor: pointer;
 }
-
-
 
 .nav-link::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: #FF5745;
-    bottom: 0;
-    left:0;
-    transition: transform 0.25 ease-out;
-    transform: scaleX(0);
-    
-
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #ff5745;
+  bottom: 0;
+  left: 0;
+  transition: transform 0.25 ease-out;
+  transform: scaleX(0);
 }
 .nav-link:hover::after {
-transform: scaleX(1);
-
-
+  transform: scaleX(1);
 }
 
 .navbar-toggler {
-   margin: 40px;
-   
+  margin: 40px;
 }
 .logo {
-    height: 120px ;
-    width: 180px;
+  height: 120px;
+  width: 180px;
 }
 
 footer {
-    position: relative;
-    background-color: #042F4A;
-    padding: 20px;
-    color: #5EC8E5;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    bottom: 0px;
-    
+  position: relative;
+  background-color: #042f4a;
+  padding: 20px;
+  color: #5ec8e5;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  bottom: 0px;
 }
 
 footer::before {
-    content: '';
-    position: absolute;
-    background: url('https://st2.depositphotos.com/3474539/7893/v/600/depositphotos_78932196-stock-illustration-topographic-map-seamless-pattern-vector.jpg');
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    mix-blend-mode: multiply;
-    object-fit: cover;
-    opacity: 0.2;
-    
-    
+  content: "";
+  position: absolute;
+  background: url("https://st2.depositphotos.com/3474539/7893/v/600/depositphotos_78932196-stock-illustration-topographic-map-seamless-pattern-vector.jpg");
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  mix-blend-mode: multiply;
+  object-fit: cover;
+  opacity: 0.2;
 }
 
-.footerHours{
-    text-align: center;
+.footerHours {
+  text-align: center;
 }
 
 .footerNavLink {
-    text-decoration: none;
-    position: relative;
-    display: flex;
+  text-decoration: none;
+  position: relative;
+  display: flex;
 }
 .footerNavLink::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: #FF5745;
-    bottom: 0;
-    left:0;
-    transition: transform 0.25 ease-out;
-    transform: scaleX(0);
-
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #ff5745;
+  bottom: 0;
+  left: 0;
+  transition: transform 0.25 ease-out;
+  transform: scaleX(0);
 }
 .footerNavLink:hover::after {
-    transform: scaleX(1);
-    
-    }
+  transform: scaleX(1);
+}
 
-
- .instagram {
-    position: relative;
-    text-decoration: none;
-    color:#5EC8E5;
-    
+.instagram {
+  position: relative;
+  text-decoration: none;
+  color: #5ec8e5;
 }
 
 .instagram:hover {
-    text-decoration: none;
-    color:#FF5745
+  text-decoration: none;
+  color: #ff5745;
 }
 
 a {
-    position: relative;
-    text-decoration: none;
-    color:#5EC8E5;
-    
+  position: relative;
+  text-decoration: none;
+  color: #5ec8e5;
 }
 
 .footerMap {
-    z-index: 1;
+  z-index: 1;
 }
 
 a:hover {
-    text-decoration: none;
-    color:#FF5745
+  text-decoration: none;
+  color: #ff5745;
 }
 
- @media only screen and (max-width: 600px ) {
-    .logo {
-        height: 90px ;
+@media only screen and (max-width: 600px) {
+  .logo {
+    height: 90px;
     width: 110px;
-    }
-    hr {
-        display: none;
-    }
-    .nav {
-        display: flex;
-        align-items: center;
-        padding-right: 0px;
-    }
+  }
+  hr {
+    display: none;
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    padding-right: 0px;
+  }
 
-    .footerMap {
-        display: none;
-    }
+  .footerMap {
+    display: none;
+  }
 
-    footer {
-        display: flex;
-        flex-direction: column;
-    }
-   .footerInfo {
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .footerInfo {
     display: flex;
     text-align: center;
     margin-top: 10px;
     flex-direction: column;
-   }
-   .footerLinks{
+  }
+  .footerLinks {
     display: none;
+  }
 }
-    }
 
-    @media only screen and (max-width: 1024px ) {
-        .footerMap {
-            display: none;
-        }
-    }
-
-
+@media only screen and (max-width: 1024px) {
+  .footerMap {
+    display: none;
+  }
+}
