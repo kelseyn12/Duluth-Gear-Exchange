@@ -1,7 +1,17 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import { useStaticQuery, graphql } from "gatsby"
 
 const Section = () => {
+
+  const data = useStaticQuery(graphql`
+  {
+    contentfulConsignmentSeason {
+      season
+    }
+  }
+`)
+const season = data.contentfulConsignmentSeason;
   return (
     <>
     <h6 className='storeInfo'>
@@ -13,7 +23,12 @@ const Section = () => {
     </h6>
 
     <h2 className='nowAcceptingText'>
-    NOW ACCEPTING &nbsp;<Link style={{ color: '#FF5745'}} to='/sellYourGear'> SPRING/SUMMER </Link> &nbsp;CONSIGNMENT 
+    NOW ACCEPTING &nbsp;<Link style={{ color: '#FF5745'}} to='/sellYourGear'>  {
+   <div>
+   {season.season}
+   </div>
+  } 
+  </Link> &nbsp;CONSIGNMENT 
     </h2>
     </>
   )
