@@ -17,7 +17,7 @@ const Section = () => {
         510 E 4TH STREET DULUTH MN <br />
         TUES - FRI: 11AM - 6PM <br />
         SAT - SUN: 10AM - 5PM <br /> <br />
-        GLGECOUNTER@GMAIL.COM <br />
+        DULUTHGEAREXCHANGE@GMAIL.COM <br />
         218-481-7270
       </h6>
 

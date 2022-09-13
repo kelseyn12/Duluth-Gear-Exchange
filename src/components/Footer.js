@@ -18,8 +18,8 @@ const Footer = () => {
         <a href="tel:+12184817270">218-481-7270</a>
         <br />
         <FontAwesomeIcon icon={faEnvelope} />{" "}
-        <a href="mailto:greatlakesgearexchange@gmail.com">
-          GREATLAKESGEAREXCHANGE@GMAIL.COM
+        <a href="mailto:duluthgearexchange@gmail.com">
+          DULUTHGEAREXCHANGE@GMAIL.COM
         </a>
         <br />
         <FontAwesomeIcon icon={faInstagram} />{" "}
