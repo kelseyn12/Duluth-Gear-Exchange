@@ -39,7 +39,7 @@ function Newsletter() {
                 required=""
               />
             </div>
-            <div hidden="true">
+            <div hidden={true}>
               <input type="hidden" name="tags" defaultValue="94275,14431" />
             </div>
             <div id="mce-responses" className="clear">

@@ -3,9 +3,10 @@ import Header from "../components/homePage/Header"
 import Instagram from "../components/homePage/Instagram"
 import Section from "../components/homePage/Section"
 import Layout from "../components/Layout"
-import "../styles/homePage.css"
-import "../styles/global.css"
+
 import Newsletter from "../components/homePage/Newsletter"
+import "../styles/global.css"
+import "../styles/homePage.css"
 
 export default function Home() {
   return (

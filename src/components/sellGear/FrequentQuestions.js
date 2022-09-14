@@ -33,7 +33,7 @@ const FrequentQuestions = () => {
                   <p alt={node.question}>{node.question}</p>
                 </Accordion.Header>
                 <Accordion.Body>
-                  <p
+                  <div
                     dangerouslySetInnerHTML={{
                       __html: node.answer.childMarkdownRemark.html,
                     }}
