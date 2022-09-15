@@ -6,7 +6,7 @@ const Form = () => {
       <h2 className="pdfForm">
         SAVE TIME! FILL OUT THIS
         <a
-          href={`static/DGE.pdf`}
+          href={`/DGE.pdf`}
           target="_blank"
           rel="noreferrer"
           id="consignmentPdf"
