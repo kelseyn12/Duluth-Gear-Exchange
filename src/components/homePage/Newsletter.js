@@ -11,7 +11,7 @@ function Newsletter() {
       />
       <div id="mc_embed_signup">
         <form
-          action="https://greatlakesgearexchange.us20.list-manage.com/subscribe/post?u=8cbc5704103be947583a230a3&id=a951d36437&f_id=002f4be6f0"
+          action="https://duluthgearexchange.us20.list-manage.com/subscribe/post?u=8cbc5704103be947583a230a3&amp;id=a951d36437&amp;f_id=002f4be6f0"
           method="post"
           id="mc-embedded-subscribe-form"
           name="mc-embedded-subscribe-form"
