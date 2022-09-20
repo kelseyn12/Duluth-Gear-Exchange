@@ -26,6 +26,8 @@ const Footer = () => {
         <a
           className="instagram"
           href="https://www.instagram.com/duluthgearexchange/"
+          target="_blank"
+          rel="noreferrer"
         >
           DULUTHGEAREXCHANGE
         </a>
