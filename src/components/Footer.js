@@ -25,9 +25,9 @@ const Footer = () => {
         <FontAwesomeIcon icon={faInstagram} />{" "}
         <a
           className="instagram"
-          href="https://www.instagram.com/greatlakesgearexchange/"
+          href="https://www.instagram.com/duluthgearexchange/"
         >
-          GREATLAKESGEAREXCHANGE
+          DULUTHGEAREXCHANGE
         </a>
       </div>
       <div className="footerLinks">

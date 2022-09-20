@@ -14,7 +14,7 @@ const Form = () => {
           {" "}
           CONSIGNMENT FORM
         </a>{" "}
-        AT HOME!
+        AT HOME!  
       </h2>
     </>
   )
