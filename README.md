@@ -8,7 +8,7 @@
   Duluth Gear Exchange
 </h1>
 <p>
-A website built using Gatsby for a local gear exchange in Duluth, MN
+A website built using Gatsby for a local gear exchange in Duluth, MN!
 </p>
 <h2>
 Technologies Used
