@@ -39,18 +39,18 @@ const Section = () => {
           </div>
         )
       })}
-      <h6 className="turnAroundTime">• TURN-AROUND TIME: 2-3 WEEKS •</h6>
+      {/* <h6 className="turnAroundTime">• TURN-AROUND TIME: 2-3 WEEKS •</h6> */}
       <h6 className="questions">
-        QUESTIONS? <br />
+        <br /> QUESTIONS? <br />
         EMAIL:{" "}
-        <a className="repairEmailNum" href="mailto:repairsbynils@gmail.com">
-          REPAIRSBYNILS@GMAIL.COM
+        <a className="repairEmailNum" href="mailto:ZIPPERFIXERDULUTH@gmail.com">
+          ZIPPERFIXERDULUTH@GMAIL.COM
         </a>{" "}
-        <br />
+        {/* <br />
         CALL:{" "}
         <a className="repairEmailNum" href="tel:+12184817270">
           218-481-7270
-        </a>
+        </a> */}
       </h6>
     </>
   )
