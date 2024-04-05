@@ -14,6 +14,11 @@ const PostDisplay = ({ item }) => {
   const handleMouseLeave = () => {
     setIsHover(false)
   }
+
+  // Check if localImage exists before accessing its properties
+  const imageData = item.node.localImage?.childImageSharp?.gatsbyImageData
+  const altText = item.node.caption || "Instagram Post"
+
   return (
     <Container
       fluid
@@ -23,13 +28,14 @@ const PostDisplay = ({ item }) => {
       role="none"
     >
       <figure className="position-relative">
-        <GatsbyImage
-          image={item.node.localImage.childImageSharp.gatsbyImageData}
-          key={item.node.id}
-          alt={item.node.caption || "Instagram Post"}
-          fluid={item.node.fluid}
-          className="image"
-        />
+        {imageData && (
+          <GatsbyImage
+            image={imageData}
+            key={item.node.id}
+            alt={altText}
+            className="image"
+          />
+        )}
         <figcaption className="imgtext">
           {isHover && <p> {item.node.caption}</p>}
         </figcaption>
