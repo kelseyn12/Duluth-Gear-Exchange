@@ -12,7 +12,7 @@ const Section = () => {
               gatsbyImageData
               description
             }
-            notAccepting {
+            lookingForTwo {
               gatsbyImageData
               description
             }
@@ -35,8 +35,8 @@ const Section = () => {
               key={index}
             />
             <GatsbyImage
-              className="notAccepting"
-              image={node.notAccepting.gatsbyImageData}
+              className="lookingForTwo"
+              image={node.lookingForTwo.gatsbyImageData}
               alt={node.description}
               key={index}
             />
