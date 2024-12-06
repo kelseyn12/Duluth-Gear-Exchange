@@ -119,6 +119,7 @@ footer::before {
   color: #ff5745;
 }
 
+
 a {
   position: relative;
   text-decoration: none;
@@ -133,6 +134,12 @@ a:hover {
   text-decoration: none;
   color: #ff5745;
 }
+
+.noHighlight {
+  text-decoration: none;
+  color: inherit; /* Matches the parent text color */
+}
+
 
 @media only screen and (max-width: 600px) {
   .logo {

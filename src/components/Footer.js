@@ -15,10 +15,10 @@ const Footer = () => {
       </div>
       <div className="footerInfo">
         <FontAwesomeIcon icon={faPhone} />{" "}
-        <a href="tel:+12184817270">218-481-7270</a>
+        <a className="noHighlight" href="tel:+12184817270">218-481-7270</a>
         <br />
         <FontAwesomeIcon icon={faEnvelope} />{" "}
-        <a href="mailto:duluthgearexchange@gmail.com">
+        <a className="noHighlight" href="mailto:duluthgearexchange@gmail.com">
           DULUTHGEAREXCHANGE@GMAIL.COM
         </a>
         <br />
