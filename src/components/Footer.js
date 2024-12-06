@@ -61,6 +61,13 @@ const Footer = () => {
         >
           CONTACT
         </Link>
+        <Link
+          className="footerNavLink"
+          style={{ textDecoration: "none", color: "#5EC8E5" }}
+          to="/Privacy"
+        >
+          PRIVACY POLICY
+        </Link>
       </div>
 
       <div className="footerMap">
