@@ -48,12 +48,6 @@ module.exports = {
       options: contentfulConfig,
     },
     {
-      resolve: `gatsby-source-instagram-all`,
-      options: {
-        access_token: process.env.IG_TOKEN 
-      },
-    },
-    {
       resolve: 'gatsby-plugin-mailchimp',
       options: {
           endpoint: process.env.MAILCHIMP_ENDPOINT 

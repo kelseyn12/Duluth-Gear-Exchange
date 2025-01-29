@@ -47,34 +47,55 @@
 
 .picContainer {
   position: relative;
-  max-width: 100%;
-  height: auto;
-  margin-top: 20px;
+  width: 100%;
+  height: 100%;
+  display: flex; /* Ensures content stretches */
+  align-items: stretch; /* Fills available space */
+  justify-content: center;
+  overflow: hidden;
 }
+
+
+
+
 .image-grid-container {
   display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto;
-  margin: 1rem 0;
-  margin-left: 10rem;
-  margin-right: 10rem;
-  padding: 0 1rem;
+  grid-template-columns: repeat(3, 1fr); /* Forces 3 equal columns */
+  gap: 0.5rem; /* Reduce extra space between items */
+  justify-items: center; /* Centers content inside grid */
+  align-items: start; /* Ensures they align properly */
+  margin: 0 auto;
+  max-width: 1200px; /* Prevents excessive width */
+  padding: 0;
 }
+
+
+
+.video,
 .image {
+  width: 100%; /* Ensures it fully fills grid item */
+  height: 100%; /* Forces all items to be the same height */
+  object-fit: cover; /* Ensures consistency and cropping */
   display: block;
-  max-width: 100%;
-  max-height: 200px;
-  min-height: 200px;
-  object-fit: cover;
-  object-position: center;
 }
+
+
+
+
+.video {
+  aspect-ratio: auto; /* Prevents squishing */
+  min-height: 100%; /* Fills vertical space */
+}
+
+
+
 
 .imgtext {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100%; /* Match container width */
+  height: 100%; /* Match container height */
   color: white;
   display: flex;
   flex-direction: column;
@@ -97,7 +118,7 @@
   -webkit-box-orient: vertical;
 }
 
-.picContainer:hover img {
+.picContainer:hover img, .picContainer:hover video {
   transition: all 300ms ease-in-out;
   filter: blur(5px);
   transform: scale(1.03);
@@ -107,6 +128,7 @@
   opacity: 1;
   background: rgba(0, 0, 0, 0.5);
 }
+
 
 #mc_embed_signup {
   display: flex;

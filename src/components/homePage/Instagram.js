@@ -1,79 +1,71 @@
-// import React from "react"
-// import { useStaticQuery, graphql } from "gatsby"
-// import _get from "lodash/get"
-// import { GatsbyImage } from "gatsby-plugin-image"
-// import { useState } from "react"
-// import { Container } from "react-bootstrap"
+import React, { useEffect, useState } from "react";
+import { Container } from "react-bootstrap";
 
-// const PostDisplay = ({ item }) => {
-//   const [isHover, setIsHover] = useState(false)
+const Instagram = () => {
+  const [posts, setPosts] = useState([]);
 
-//   const handleMouseEnter = () => {
-//     setIsHover(true)
-//   }
-//   const handleMouseLeave = () => {
-//     setIsHover(false)
-//   }
+  useEffect(() => {
+    fetch("/instagram-posts.json")
+      .then((response) => response.json())
+      .then((data) => {
+        console.log("Fetched Instagram data:", data);
 
-//   // Check if localImage exists before accessing its properties
-//   const imageData = item.node.localImage?.childImageSharp?.gatsbyImageData
-//   const altText = item.node.caption || "Instagram Post"
+        // Filter posts with valid media and limit to 6
+        const filteredPosts = data
+          .filter((post) => 
+            post.media_url && 
+            (post.media_url.includes(".jpg") || post.media_url.includes(".png") || post.media_url.includes(".mp4"))
+          )
+          .slice(0, 6);
 
-//   return (
-//     <Container
-//       fluid
-//       className="picContainer"
-//       onMouseEnter={handleMouseEnter}
-//       onMouseLeave={handleMouseLeave}
-//       role="none"
-//     >
-//       <figure className="position-relative">
-//         {imageData && (
-//           <GatsbyImage
-//             image={imageData}
-//             key={item.node.id}
-//             alt={altText}
-//             className="image"
-//           />
-//         )}
-//         <figcaption className="imgtext">
-//           {isHover && <p> {item.node.caption}</p>}
-//         </figcaption>
-//       </figure>
-//     </Container>
-//   )
-// }
+        setPosts(filteredPosts);
+      })
+      .catch((error) => console.error("Error loading Instagram posts:", error));
+  }, []);
 
-// const Instagram = () => {
-//   const data = useStaticQuery(graphql`
-//     query InstagramQuery {
-//       allInstagramContent(limit: 6) {
-//         edges {
-//           node {
-//             localImage {
-//               childImageSharp {
-//                 gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
-//                 fluid(maxWidth: 200) {
-//                   ...GatsbyImageSharpFluid
-//                 }
-//               }
-//             }
-//             caption
-//           }
-//         }
-//       }
-//     }
-//   `)
-//   let arrayOfInstaImages = _get(data, "allInstagramContent.edges")
-//   return (
-//     <>
-//       <div className="image-grid-container">
-//         {arrayOfInstaImages.map((item, i) => {
-//           return <PostDisplay item={item} key={i} />
-//         })}
-//       </div>
-//     </>
-//   )
-// }
+  return (
+    <div className="image-grid-container">
+      {Array.isArray(posts) && posts.length > 0 ? (
+        posts.map((post) => (
+          <Container fluid className="picContainer" key={post.id}>
+            <figure className="position-relative">
+              <a href={post.permalink} target="_blank" rel="noopener noreferrer">
+                {post.media_url.includes(".mp4") ? (
+                  <video controls className="video">
+                    <source src={post.media_url} type="video/mp4" />
+                    <track
+                      src="captions.vtt"
+                      kind="captions"
+                      srclang="en"
+                      label="English captions"
+                      default
+                    />
+                    Your browser does not support the video tag.
+                  </video>
+                ) : (
+                  <img
+                    src={post.media_url}
+                    alt={post.caption || "Instagram post"}
+                    className="image"
+                    loading="lazy"
+                  />
+                )}
+              </a>
+              {post.caption && (
+                <figcaption className="imgtext">
+                  <p>{post.caption}</p>
+                </figcaption>
+              )}
+            </figure>
+          </Container>
+        ))
+      ) : (
+        <p>Loading Instagram posts...</p>
+      )}
+    </div>
+  );
+};
 
-// export default Instagram
+export default Instagram;
+
+
