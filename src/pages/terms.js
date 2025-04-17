@@ -3,10 +3,10 @@ import Layout from "../components/Layout";
 import Terms from "../components/Terms/terms";
 import "../styles/terms.css";
 
-const Terms = () => (
+const TermsPage = () => (
   <Layout>
     <Terms />
   </Layout>
 );
 
-export default Terms;
+export default TermsPage;
