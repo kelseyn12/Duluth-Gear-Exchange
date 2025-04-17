@@ -1,6 +1,8 @@
 import fetch from 'node-fetch';
 
 exports.handler = async () => {
+  console.log('Using token:', longToken);
+
   try {
     const longToken = process.env.INSTAGRAM_GRAPH_ACCESS_TOKEN;
     const clientSecret = process.env.INSTAGRAM_CLIENT_SECRET;
