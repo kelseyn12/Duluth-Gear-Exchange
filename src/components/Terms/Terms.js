@@ -1,7 +1,7 @@
 import React from "react";
 
 
-const Terms = () => (
+const TermsComponent = () => (
   <div className="terms-container">
     <h1>Terms of Service</h1>
 
@@ -14,4 +14,4 @@ const Terms = () => (
   </div>
 );
 
-export default Terms;
+export default TermsComponent;

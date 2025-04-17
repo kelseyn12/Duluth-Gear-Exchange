@@ -1,11 +1,11 @@
 import React from "react";
 import Layout from "../components/Layout";
-import Terms from "../components/Terms/terms";
+import TermsComponent from "../components/Terms/terms";
 import "../styles/terms.css";
 
 const TermsPage = () => (
   <Layout>
-    <Terms />
+    <TermsComponent />
   </Layout>
 );
 
