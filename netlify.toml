@@ -1,7 +1,7 @@
 
 [build]
   command = "yarn build"
-  functions = "netlify/functions"
+
 
 [context.production.environment]
   NODE_VERSION = "20.17.0"
