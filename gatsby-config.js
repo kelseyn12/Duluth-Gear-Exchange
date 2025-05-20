@@ -16,7 +16,7 @@ const contentfulConfig = {
 
 if (process.env.CONTENTFUL_HOST) {
   contentfulConfig.host = process.env.CONTENTFUL_HOST;
-  contentfulConfig.accessToken = proccess.env.CONTENTFUL_PREVIEW_ACCESS_TOKEN;
+  contentfulConfig.accessToken = process.env.CONTENTFUL_PREVIEW_ACCESS_TOKEN;
 }
 
 const { spaceId, accessToken } = contentfulConfig;
@@ -41,17 +41,10 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-instagram-embed`,
     `gatsby-transformer-remark`,
-    `gatsby-plugin-react-helmet`,
 
     {
       resolve: "gatsby-source-contentful",
       options: contentfulConfig,
-    },
-    {
-      resolve: `gatsby-source-instagram-all`,
-      options: {
-        access_token: process.env.IG_TOKEN 
-      },
     },
     {
       resolve: 'gatsby-plugin-mailchimp',

@@ -9,8 +9,8 @@ const sellYourGear = () => {
   return (
     <Layout>
       <Section />
-      <FrequentQuestions />
       <Form />
+      <FrequentQuestions />
     </Layout>
   )
 }
