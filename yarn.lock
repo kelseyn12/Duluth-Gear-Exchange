@@ -5953,7 +5953,7 @@ gatsby-sharp@^1.14.0:
   dependencies:
     sharp "^0.32.6"
 
-gatsby-source-contentful@^8.13.1:
+gatsby-source-contentful@^8.13.2:
   version "8.15.0"
   resolved "https://registry.yarnpkg.com/gatsby-source-contentful/-/gatsby-source-contentful-8.15.0.tgz#72ee16bbc641058e65ef52d7381eae8e2dd21ec1"
   integrity sha512-/zBM6AAv9w/VW0OZf8J+1Gab0QFz8d06JU1tsEncxKyBWfbeYcIKbttvTyvttrMuZJMSY3UZfisB1ngBZlOWjA==
