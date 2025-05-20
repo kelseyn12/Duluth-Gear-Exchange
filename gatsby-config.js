@@ -41,7 +41,6 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-instagram-embed`,
     `gatsby-transformer-remark`,
-    `gatsby-plugin-react-helmet`,
 
     {
       resolve: "gatsby-source-contentful",
