@@ -7,7 +7,7 @@ const Navigation = () => {
       <Navbar collapseOnSelect expand="lg">
         <Navbar.Brand href="/">
           <img
-            src={"https://i.imgur.com/S8DQ87C.png"}
+            src={"https://i.imgur.com/ApPvViH.png"}
             className="logo"
             alt="Duluth Gear Exchange logo"
           />
