@@ -5,7 +5,7 @@ const Instagram = () => {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    fetch("/instagram-posts.json")
+    fetch("/.netlify/functions/getInstagramPosts")
       .then((response) => response.json())
       .then((data) => {
         console.log("Fetched Instagram data:", data);

@@ -65,6 +65,12 @@ module.exports = {
   }
     
   ],
+  developMiddleware: app => {
+    app.use('/.netlify/functions/', require('http-proxy-middleware')({
+      target: 'http://localhost:9999',
+      pathRewrite: { '/.netlify/functions/': '' },
+    }));
+  },
 };
 
 
