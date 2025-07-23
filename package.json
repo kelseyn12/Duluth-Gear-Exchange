@@ -17,6 +17,8 @@
     "node": ">=20.17.0"
   },
   "dependencies": {
+    "ajv": "6.12.6",
+    "ajv-keywords": "3.5.2",
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
     "@fortawesome/free-brands-svg-icons": "^6.2.1",
     "@fortawesome/free-solid-svg-icons": "^6.2.1",
