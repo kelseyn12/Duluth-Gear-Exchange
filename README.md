@@ -1,7 +1,7 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.duluthgearexchange.com">
-    <img alt="DGE" src="https://imgur.com/a/0b378aN" width="100" />
+    <img alt="DGE" src="https://i.imgur.com/YmNjzS2.jpeg" width="100" />
   </a>
 </p>
 <h1 align="center">
